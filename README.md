@@ -1,0 +1,4 @@
+seatpadStore
+============
+
+angular-seed
