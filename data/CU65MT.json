@@ -1,0 +1,19 @@
+	{ 
+		"id": 3,
+		"name": "เบาะรองนั่งเอนกประสงค์ทอลาย", 
+		"code": "CU65MT", 
+		"description" : "ผลิตจากผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
+		"size": "17 นิ้ว",
+		"thickness" : "2 นิ้ว",
+		"fabrice" : "ผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว โดยท่านสามารถเลือกลายผ้าได้",
+		"inside": "เส้นใย POLYESTER",
+		"price": 2.95,
+		"canPurchase": true,
+		"soldOut": false,
+		"images": [
+			"img/pd3.png",
+			"img/pd3-2.jpg",
+			"img/pd3-3.jpg"
+		],
+		"cleaness":true
+	}

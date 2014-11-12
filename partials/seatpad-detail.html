@@ -1,0 +1,44 @@
+TBD: detail view for <span>{{productId}}</span>
+<div class="product row">
+	<div class="col-xs-10 center-block" ng-hide="product.soldOut">
+		<h2>รายการสินค้า</h2>
+  	<product-title></product-title>
+    <div class="gallery col-xs-12">
+			<!-- <img ng-src="{{mainImageUrl}}" alt="{{product.name}}" style="width:350px"> -->
+  		<!-- <ul class="list-inline thumbs"> -->
+  			<!-- <li class="thumbnail" ng-repeat="image in product.images"> -->
+  				<!-- <img alt="{{product.name}}" ng-src="{{image}}" style="width:100px"  ng-click="setImage(image)"> -->
+  			<!-- </li> -->
+  		<!-- </ul> -->
+  		<!-- We're only changing the top of the file -->
+<div class="product-images">
+  <img ng-src="{{img}}"
+       class="product" style="width:350px"
+       ng-repeat="img in product.images"
+       ng-class="{active:mainImageUrl==img}">
+</div>
+
+<h1>{{product.name}}</h1>
+
+<p>{{product.description}}</p>
+
+<ul class="product-thumbs">
+  <li ng-repeat="img in product.images">
+    <img ng-src="{{img}}" ng-mouseenter="setImage(img)" style="width:100px">
+  </li>
+</ul>
+    </div>
+    <button class="pull-right" ng-show="product.canPurchase">Add to Cart</button>
+    <p>{{product.name}}</p>
+		<h4>รายละเอียด</h4>
+		<small>{{product.code}}</small>
+		<p>{{product.description}}</p>
+		<h4>คุณสมบัติ</h4>
+		<p>ขนาด: {{product.size}}</p>
+		<p>ความหนา: {{product.thickness}}</p>
+		<p>ลายผ้า: {{product.fabric}}</p>
+		<p>ภายใน: {{product.inside}}</p>
+		<p>การทำความสะอาด: {{product.cleaness | checkmark }}</p>					
+		</div>
+	</div>
+</div>

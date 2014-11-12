@@ -1,0 +1,33 @@
+	{ 
+		"id": 5,
+		"name": "เบาะรองนั่งผ้าตรึงหลุม Vintage", 
+		"code": "CU18CV", 
+		"description" : "ผลิตจากผ้า Canvas  ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ใย POLYESTER คุณภาพ ให้ความนุ่มสบาย เหมาะสำหรับนั่งรองพื้นเก้าอี้ หรือ รองพื้นทั่วไป   ซักน้ำได้ทั้งใบ",
+		"size": "18X18 นิ้ว",
+		"thickness" : "2 นิ้ว",
+		"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ",
+		"inside": "เส้นใย POLYESTER",
+		"price": 2.95,
+		"canPurchase": true,
+		"soldOut": false,
+		"images":[
+			"img/pd5.png"
+		],
+		"reviews": [{
+	        "stars": 1,
+	        "body": "This gem is WAY too expensive for its rarity value.",
+	        "author": "turtleguyy@example.org",
+	        "createdOn": 1397490980837
+	    }, {
+	        "stars": 1,
+	        "body": "BBW: High Shine != High Quality.",
+	        "author": "LouisW407@example.org",
+	        "createdOn": 1397490980837
+	    }, {
+	        "stars": 1,
+	        "body": "Don't waste your rubles!",
+	        "author": "nat@example.org",
+	        "createdOn": 1397490980837
+	  }],
+	  "cleaness":false
+	}

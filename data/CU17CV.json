@@ -1,0 +1,30 @@
+{ 
+	"id": 2,
+	"name": "เบาะรองเก้าอี้ Vintage", 
+	"code": "CU17CV", 
+	"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก  มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว   นั่งสบาย มีซิปถอดผ้าซักได้",
+	"size": "17X17 นิ้ว",
+	"thickness" : "2 นิ้ว",
+	"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+	"inside": "ฟองน้ำ",
+	"price": 2.95,
+	"canPurchase": true,
+	"soldOut": false,
+	"images":[
+		"img/pd2.png"
+	],
+	"reviews": [
+		{
+        "stars": 3,
+        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "author": "JimmyDean@example.org",
+        "createdOn": 1397490980837
+    }, {
+        "stars": 4,
+        "body": "Any gem with 12 faces is for me!",
+        "author": "gemsRock@example.org",
+        "createdOn": 1397490980837
+    }
+  ],
+  "cleaness":true
+}
