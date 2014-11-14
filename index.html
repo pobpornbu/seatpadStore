@@ -5,6 +5,10 @@
   <title>Seatpad Store</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -16,7 +20,36 @@
   <script src="js/services.js"></script>
   <script src="js/animations.js"></script>
 </head>
-<body>
+<body class="theme__body">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">เบาะรองนั่ง</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <div class="navbar-right">
+        <form class="navbar-form pull-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <i class="mdi-action-search form-icon-search"></i>
+        </form>
+        <p class="navbar-item navbar-gap">Sort by:</p>
+        <div class="form-control-wrapper navbar-item">
+          <select class="form-control" id="select" ng-m-vodel="orderProp">
+            <option value="name">Alphabetical</option>
+            <option value="id">Newest</option>
+          </select>
+          <span class="material-input"></span>
+        </div>
+      </div>   
+    </div> 
+  </div> 
   <div class="view-container">
     <div ng-view class="view-frame"></div>
   </div>
