@@ -14,6 +14,8 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script> 
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/apps.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
@@ -33,19 +35,21 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <div class="navbar-right">
-        <form class="navbar-form pull-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+        <form class="navbar-form pull-left search__form" role="search">
+          <div class="form-group search__wrap">
+            <input type="text" class="form-control search__input" placeholder="Search" ng-model="query">
+            <i class="mdi-action-search search__icon"></i>
           </div>
-          <i class="mdi-action-search form-icon-search"></i>
         </form>
-        <p class="navbar-item navbar-gap">Sort by:</p>
-        <div class="form-control-wrapper navbar-item">
-          <select class="form-control" id="select" ng-m-vodel="orderProp">
-            <option value="name">Alphabetical</option>
-            <option value="id">Newest</option>
-          </select>
-          <span class="material-input"></span>
+        <div class="navbar__sort pull-left">
+          <p class="navbar-item navbar-gap">Sort by:</p>
+          <div class="form-control-wrapper navbar-item">
+            <select class="form-control" ng-model="orderSort">
+              <option value="name">Alphabetical</option>
+              <option value="id">Newest</option>
+            </select>
+            <span class="material-input"></span>
+          </div>
         </div>
       </div>   
     </div> 

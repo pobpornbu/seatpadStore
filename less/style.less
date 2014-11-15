@@ -20,12 +20,28 @@
 	margin-right: 5px;
 }
 
-.form-icon-search {
-	position: relative;
-	top: 4px;
-	display: inline-block;
-	font-size: 22px;
+.icon-bar {
+  background-color: #ccc;
 }
+
+.component(search {
+  .part(form {
+    padding: 0 15px;
+  });
+  .part(wrap {
+    margin-right: 15px;
+  });
+  .part(input {
+    display: inline-block;
+    width: auto;
+  });
+  .part(icon {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    font-size: 22px;
+  });
+});
 
 // seatpad-detail
 .products {
@@ -98,13 +114,13 @@ img.product {
 	max-width: 800px;
 }
 
-.ng-dirty.ng-invalid {
-	border-color: red;
-}
+// .ng-dirty.ng-invalid {
+// 	border-color: red;
+// }
 
-.ng-dirty.ng-valid {
-	border-color: green;
-}
+// .ng-dirty.ng-valid {
+// 	border-color: green;
+// }
 
 .tweak(clearBoth {
 	clear: both;
@@ -257,8 +273,10 @@ display: block;
   to { opacity: 0; }
 }
 
-.example {
-	.grid {
-		background: red;
-	}
+@media (min-width: 768px) {
+  .component(search{
+    .part(form {
+      padding: 0;
+    });
+  });
 }

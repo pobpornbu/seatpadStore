@@ -13,7 +13,20 @@
 .navbar-gap {
   margin-right: 5px;
 }
-.form-icon-search {
+.icon-bar {
+  background-color: #ccc;
+}
+.search__form {
+  padding: 0 15px;
+}
+.search__wrap {
+  margin-right: 15px;
+}
+.search__input {
+  display: inline-block;
+  width: auto;
+}
+.search__icon {
   position: relative;
   top: 4px;
   display: inline-block;
@@ -76,12 +89,6 @@ img.product:first-child {
 }
 .gallery__img--current {
   max-width: 800px;
-}
-.ng-dirty.ng-invalid {
-  border-color: red;
-}
-.ng-dirty.ng-valid {
-  border-color: green;
 }
 .\+clearBoth {
   clear: both;
@@ -226,6 +233,8 @@ img.phone:first-child {
     opacity: 0;
   }
 }
-.example .grid {
-  background: red;
+@media (min-width: 768px) {
+  .search__form {
+    padding: 0;
+  }
 }

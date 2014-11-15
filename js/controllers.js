@@ -41,10 +41,12 @@ var StoreController = angular.module('StoreController', []);
 //     }
 //   }]);
 
-StoreController.controller('ProductListCtrl', ['$scope', 'Seatpad', function($scope, Seatpad) {
-  $scope.products = Seatpad.query();
-  $scope.orderProp = 'id';
-}]);
+StoreController.controller('ProductListCtrl', ['$scope', 'Seatpad', 
+  function($scope, Seatpad) {
+    $scope.products = Seatpad.query();
+    $scope.orderSort = 'id';
+  }
+]);
 
 StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seatpad', 
 	function($scope, $routeParams, Seatpad) {

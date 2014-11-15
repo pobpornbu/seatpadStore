@@ -7,7 +7,8 @@ var seatpadStore = angular.module('seatpadStore', [
   'StoreController',
   'productFilters',
   'productServices',
-  'productAnimations'
+  'productAnimations',
+  'ui.bootstrap'
 ]);
 
 seatpadStore.config(['$routeProvider',

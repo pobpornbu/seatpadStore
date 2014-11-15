@@ -1,7 +1,7 @@
 <!--Body content-->
 <div class="container @product-list">
   <div class="row">
-    <div class="products" ng-repeat="product in products | filter:query | orderBy:orderProp">
+    <div class="products" ng-repeat="product in products | filter:query | orderBy:orderSort">
       <div ng-if="$odd">
         <div class="product-list-wrap col-xs-12 col-sm-6">
           <a href="#/seatpad/{{product.code}}" class="thumb product-listing">
