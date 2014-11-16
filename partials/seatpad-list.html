@@ -1,8 +1,18 @@
 <!--Body content-->
 <div class="container @product-list">
+  <div class="row text-right">
+    <p class="navbar-gap">Sort by:</p>
+    <div class="form-control-wrapper navbar-gap">
+      <select class="form-control" ng-model="orderSort">
+        <option value="name">Alphabetical</option>
+        <option value="id">Newest</option>
+      </select>
+      <span class="material-input"></span>
+    </div>
+  </div>
   <div class="row">
     <div class="products" ng-repeat="product in products | filter:query | orderBy:orderSort">
-      <div ng-if="$odd">
+      <div ng-if="$odd" class="product-wrap">
         <div class="product-list-wrap col-xs-12 col-sm-6">
           <a href="#/seatpad/{{product.code}}" class="thumb product-listing">
             <img ng-src="{{product.images[0]}}" class="thumb product-listing-img">
@@ -14,7 +24,7 @@
         </div>
         <div class="clearfix hidden-xs"></div>
       </div>
-      <div ng-if="$even">
+      <div ng-if="$even" class="product-wrap">
         <div class="product-list-wrap col-xs-12 col-sm-6">
           <a href="#/seatpad/{{product.code}}" class="thumb product-listing">
             <img ng-src="{{product.images[0]}}" class="thumb product-listing-img">

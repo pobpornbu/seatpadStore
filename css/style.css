@@ -12,6 +12,7 @@
 }
 .navbar-gap {
   margin-right: 5px;
+  display: inline-block;
 }
 .icon-bar {
   background-color: #ccc;
