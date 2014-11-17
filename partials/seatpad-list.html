@@ -1,6 +1,12 @@
 <!--Body content-->
 <div class="container @product-list">
-  <div class="row text-right">
+  <div class="row text-right searchsort__group">
+    <form class="search__form" role="search">
+      <div class="form-group search__wrap">
+        <input type="text" class="form-control search__input" placeholder="Search" ng-model="query">
+        <i class="mdi-action-search search__icon"></i>
+      </div>
+    </form>
     <p class="navbar-gap">Sort by:</p>
     <div class="form-control-wrapper navbar-gap">
       <select class="form-control" ng-model="orderSort">
@@ -12,25 +18,25 @@
   </div>
   <div class="row">
     <div class="products" ng-repeat="product in products | filter:query | orderBy:orderSort">
-      <div ng-if="$odd" class="product-wrap">
+      <div ng-if="$odd" class="product-wrap odd">
         <div class="product-list-wrap col-xs-12 col-sm-6">
           <a href="#/seatpad/{{product.code}}" class="thumb product-listing">
             <img ng-src="{{product.images[0]}}" class="thumb product-listing-img">
           </a>
           <a href="#/seatpad/{{product.code}}" class="product-listing-name btn btn-flat btn-default withripple">
-            <h2 class="product__head --name">{{product.name}}</h2>
+            <h2 class="theme__font --productname">{{product.name}}</h2>
             <div class="ripple-wrapper"></div>
           </a>
         </div>
         <div class="clearfix hidden-xs"></div>
       </div>
-      <div ng-if="$even" class="product-wrap">
+      <div ng-if="$even" class="product-wrap even">
         <div class="product-list-wrap col-xs-12 col-sm-6">
           <a href="#/seatpad/{{product.code}}" class="thumb product-listing">
             <img ng-src="{{product.images[0]}}" class="thumb product-listing-img">
           </a>
           <a href="#/seatpad/{{product.code}}" class="product-listing-name btn btn-flat btn-default withripple">
-            <h2 class="product__head --name">{{product.name}}</h2>
+            <h2 class="theme__font --productname">{{product.name}}</h2>
             <div class="ripple-wrapper"></div>
           </a>
         </div>
