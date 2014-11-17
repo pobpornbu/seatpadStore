@@ -1,14 +1,46 @@
 @import (reference) "cssstyle.less";
-.component(theme {
-  .part(body{
-    background-color: #FFFFFF;
+@import "variable.less";
+
+.location(gold {
+  .component(theme {
+    .part(body {
+      background-color: #FFFFFF;
+    });
+
+    .part(navbar {
+      background-color: @brand-color-primary;
+      box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 6px, rgba(0, 0, 0, 0.227451) 0px 3px 6px;
+      transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); 
+    });
+
+    .part(font {
+      color: @font-color;
+      .option(brand {
+        color: @font-color-brand;
+        font-size: 24px;
+      });
+      .option(productname {
+        color: @font-color-head;
+      });
+    });
+    .part(head {
+      color: @font-color-head;
+    });
+
+    .part(btn {
+      .option(primary {
+        background: @brand-color-primary !important;
+      });
+    });
   });
 });
 
 .view-container {
   position: relative;
-  padding: 30px 0;
+  padding: 50px 0 30px;
 }
+
 // nav
 .navbar-item {
 	margin-top: 13px;
@@ -18,14 +50,40 @@
 
 .navbar-gap {
 	margin-right: 5px;
+  display: inline-block;
 }
 
-.form-icon-search {
-	position: relative;
-	top: 4px;
-	display: inline-block;
-	font-size: 22px;
+.icon-bar {
+  background-color: #ccc;
 }
+
+.component(searchsort {
+  .part(group {
+    position: absolute;
+    top: -40px;
+    right: 25px;
+  });  
+});
+.component(search {
+  .part(form {
+    display: inline-block;
+    padding: 0 8px;
+    margin-top: 30px;
+  });
+  .part(wrap {
+    margin-right: 15px;
+  });
+  .part(input {
+    display: inline-block;
+    width: auto;
+  });
+  .part(icon {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    font-size: 22px;
+  });
+});
 
 // seatpad-detail
 .products {
@@ -36,6 +94,11 @@
 	display: block;
 	text-align: center;
 }
+
+.odd .product-listing-name{
+  margin-top: 18px;
+}
+
 
 .component(product-thumbs{
   padding: 0;
@@ -98,18 +161,17 @@ img.product {
 	max-width: 800px;
 }
 
-.ng-dirty.ng-invalid {
-	border-color: red;
-}
+// .ng-dirty.ng-invalid {
+// 	border-color: red;
+// }
 
-.ng-dirty.ng-valid {
-	border-color: green;
-}
+// .ng-dirty.ng-valid {
+// 	border-color: green;
+// }
 
 .tweak(clearBoth {
 	clear: both;
 });
-
 
 .dropdown-right {
 	display: inline-block;
@@ -141,28 +203,101 @@ display: block;
 });
 
 .location(product-detail{
-  .component(product{
+  .component(theme{
     .part(head{
       border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
       .option(left{
         display: inline-block;
       });
-      .option(name{
+      .option(productname{
         font-size: 28px;
       });
+    });
+
+    .part(btn {
+      margin-top: -10px;
     });
   });
 });
 
 .location(product-list{
-  .component(product{
-    .part(head{
-      .option(name{
-        font-size: 22px;
+  .component(theme{
+    .part(font{
+      .option(productname{
+        font-size: 20px;
       });
     });
   });
 });
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+@media (min-width: 768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
 /*
  * animations css stylesheet
  */
@@ -257,8 +392,10 @@ display: block;
   to { opacity: 0; }
 }
 
-.example {
-	.grid {
-		background: red;
-	}
+@media (min-width: 768px) {
+  .component(search{
+    .part(form {
+      padding: 0;
+    });
+  });
 }

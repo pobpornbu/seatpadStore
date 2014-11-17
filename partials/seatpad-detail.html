@@ -1,7 +1,6 @@
 <div class="container">
   <div class="product row @product-detail">
     <div class="col-xs-12 center-block clearfix" ng-hide="product.soldOut">
-    	<!-- <h2>รายการสินค้า</h2> -->
       <product-title></product-title>
       <div class="gallery">
     			<!-- <img ng-src="{{mainImageUrl}}" alt="{{product.name}}" style="width:350px"> -->
@@ -21,20 +20,20 @@
         </ul>
       </div>
       <div class="+clearBoth">
-        <button class="pull-right" ng-show="product.canPurchase">Add to Cart</button>  
-        <h1 class="product__head --name">{{product.name}}</h1>
+        <a href="javascript:void(0)" class="[ btn btn-raised ] [ theme__btn --primary ] pull-right" ng-show="product.canPurchase">Add to Cart</a>
+        <h1 class="theme__head --productname">{{product.name}}</h1>
       </div>
-      <p>{{product.description}}</p>
-      <h4 class="product__head">รายละเอียด</h4>
-      <p>รหัสสินค้า: {{product.code}}</p>
-      <p>{{product.description}}</p>
+      <p class="theme__font">{{product.description}}</p>
+      <h4 class="theme__head">รายละเอียด</h4>
+      <p class="theme__font">รหัสสินค้า: {{product.code}}</p>
+      <p class="theme__font">{{product.description}}</p>
       <ul class="product-property">
-        <h4 class="product__head">คุณสมบัติ</h4>
-        <li class="product-property__list">ขนาด: {{product.size}}</li>
-        <li class="product-property__list">ความหนา: {{product.thickness}}</li>
-        <li class="product-property__list">ลายผ้า: {{product.fabric}}</li>
-        <li class="product-property__list">ภายใน: {{product.inside}}</li>
-        <li class="product-property__list">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
+        <h4 class="theme__head">คุณสมบัติ</h4>
+        <li class="product-property__list theme__font">ขนาด: {{product.size}}</li>
+        <li class="product-property__list theme__font">ความหนา: {{product.thickness}}</li>
+        <li class="product-property__list theme__font">ลายผ้า: {{product.fabric}}</li>
+        <li class="product-property__list theme__font">ภายใน: {{product.inside}}</li>
+        <li class="product-property__list theme__font">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
       </ul>
     </div>
   </div>
