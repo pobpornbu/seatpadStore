@@ -19,13 +19,13 @@
 		"reviews": [
 			{
         "stars": 5,
-        "body": "I love this gem!",
+        "body": "เบาะนุ่มดีครับ",
         "author": "joe@example.org",
         "createdOn": 1397490980837
 	    },
 	    {
         "stars": 1,
-        "body": "This gem sucks.",
+        "body": "อยากให้เชือกยาวกว่านี้ค่ะ",
         "author": "tim@example.org",
         "createdOn": 1397490980837
 	    }
@@ -50,12 +50,12 @@
 		"reviews": [
 			{
         "stars": 3,
-        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "body": "ชอบลายค่ะ มีหลายลายให้เลือกดี",
         "author": "JimmyDean@example.org",
         "createdOn": 1397490980837
 	    }, {
         "stars": 4,
-        "body": "Any gem with 12 faces is for me!",
+        "body": "ส่งให้เร็วมากเลย ชอบๆ",
         "author": "gemsRock@example.org",
         "createdOn": 1397490980837
 	    }
@@ -115,17 +115,17 @@
 		],
 		"reviews": [{
         "stars": 1,
-        "body": "This gem is WAY too expensive for its rarity value.",
+        "body": "เปลี่ยนลายผ้าได้มั้ยคับ รบกวนติดต่อกลับด้วยครับ",
         "author": "turtleguyy@example.org",
         "createdOn": 1397490980837
 	    }, {
         "stars": 1,
-        "body": "BBW: High Shine != High Quality.",
+        "body": "มีบริการส่งที่บ้านมั้ยคะ",
         "author": "LouisW407@example.org",
         "createdOn": 1397490980837
 	    }, {
         "stars": 1,
-        "body": "Don't waste your rubles!",
+        "body": "หนาดีนะคะ ชอบค่ะ",
         "author": "nat@example.org",
         "createdOn": 1397490980837
 	  }],
