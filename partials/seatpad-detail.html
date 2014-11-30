@@ -35,6 +35,40 @@
         <li class="product-property__list theme__font">ภายใน: {{product.inside}}</li>
         <li class="product-property__list theme__font">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
       </ul>
+      <div>
+        <h4 class="theme__head">คำติชม</h4>
+        <div ng-repeat="review in product.reviews">
+          <blockquote class="theme__font">
+            <strong class="theme__font">{{review.stars}} Stars</strong>
+            {{review.body}}
+            <cite class="theme__font clearfix">— {{review.author}}</cite>
+          </blockquote>
+        </div>
+        <form name="reviewForm" ng-submit="reviewForm.$valid && addReview(product)" novalidate>
+          <!--  Live Preview -->
+          <blockquote class="theme__font">
+              <strong class="theme__font">{{review.stars}} Stars</strong>
+              {{review.body}}
+              <cite class="theme__font clearfix">— {{review.author}}</cite>
+          </blockquote>
+
+          <!--  Review Form -->
+          <fieldset class="form-group">
+            <select class="form-control" ng-model="review.stars" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars" required>
+                <option value="">โปรดให้คะแนนสินค้า</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <textarea class="form-control" ng-model="review.body"  placeholder="โปรดให้คำแนะนำสินค้า" title="Review" required></textarea>
+          </fieldset>
+          <fieldset class="form-group">
+            <input type="email" class="form-control" ng-model="review.author" placeholder="jimmyDean@example.org" title="Email" required />
+          </fieldset>
+          <fieldset class="form-group">
+            <input type="submit" class="[ btn theme__btn --primary ] pull-right" value="Submit Review" />
+          </fieldset>
+        </form>
+      </div>
     </div>
   </div>
 </div>
