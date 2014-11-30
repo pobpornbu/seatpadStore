@@ -1,8 +1,8 @@
 [
-	{ 
+	{
 		"id":1,
-		"name": "เบาะรองเก้าอี้ทอลาย", 
-		"code": "CU17MT", 
+		"name": "เบาะรองเก้าอี้ทอลาย",
+		"code": "CU17MT",
 		"description" : "ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
 		"thickness" : "2 นิ้ว",
@@ -18,24 +18,24 @@
 		],
 		"reviews": [
 			{
-	        "stars": 5,
-	        "body": "I love this gem!",
-	        "author": "joe@example.org",
-	        "createdOn": 1397490980837
-	    }, 
+        "stars": 5,
+        "body": "I love this gem!",
+        "author": "joe@example.org",
+        "createdOn": 1397490980837
+	    },
 	    {
-	        "stars": 1,
-	        "body": "This gem sucks.",
-	        "author": "tim@example.org",
-	        "createdOn": 1397490980837
+        "stars": 1,
+        "body": "This gem sucks.",
+        "author": "tim@example.org",
+        "createdOn": 1397490980837
 	    }
 	  ],
 	  "cleaness":true
 	},
-	{ 
+	{
 		"id": 2,
-		"name": "เบาะรองเก้าอี้ Vintage", 
-		"code": "CU17CV", 
+		"name": "เบาะรองเก้าอี้ Vintage",
+		"code": "CU17CV",
 		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก  มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว   นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
 		"thickness" : "2 นิ้ว",
@@ -49,23 +49,23 @@
 		],
 		"reviews": [
 			{
-	        "stars": 3,
-	        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
-	        "author": "JimmyDean@example.org",
-	        "createdOn": 1397490980837
+        "stars": 3,
+        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "author": "JimmyDean@example.org",
+        "createdOn": 1397490980837
 	    }, {
-	        "stars": 4,
-	        "body": "Any gem with 12 faces is for me!",
-	        "author": "gemsRock@example.org",
-	        "createdOn": 1397490980837
+        "stars": 4,
+        "body": "Any gem with 12 faces is for me!",
+        "author": "gemsRock@example.org",
+        "createdOn": 1397490980837
 	    }
 	  ],
 	  "cleaness":true
-	},		
-	{ 
+	},
+	{
 		"id": 3,
-		"name": "เบาะรองนั่งเอนกประสงค์ทอลาย", 
-		"code": "CU65MT", 
+		"name": "เบาะรองนั่งเอนกประสงค์ทอลาย",
+		"code": "CU65MT",
 		"description" : "ผลิตจากผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
 		"thickness" : "2 นิ้ว",
@@ -81,10 +81,10 @@
 		],
 		"cleaness":true
 	},
-	{ 
+	{
 		"id":4,
-		"name": "เบาะรองนั่งเอนกประสงค์ Vintage", 
-		"code": "CU65CV", 
+		"name": "เบาะรองนั่งเอนกประสงค์ Vintage",
+		"code": "CU65CV",
 		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
 		"thickness" : "2 นิ้ว",
@@ -98,10 +98,10 @@
 		],
 		"cleaness":true
 	},
-	{ 
+	{
 		"id": 5,
-		"name": "เบาะรองนั่งผ้าตรึงหลุม Vintage", 
-		"code": "CU18CV", 
+		"name": "เบาะรองนั่งผ้าตรึงหลุม Vintage",
+		"code": "CU18CV",
 		"description" : "ผลิตจากผ้า Canvas  ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ใย POLYESTER คุณภาพ ให้ความนุ่มสบาย เหมาะสำหรับนั่งรองพื้นเก้าอี้ หรือ รองพื้นทั่วไป   ซักน้ำได้ทั้งใบ",
 		"size": "18X18 นิ้ว",
 		"thickness" : "2 นิ้ว",
@@ -114,21 +114,21 @@
 			"img/pd5.png"
 		],
 		"reviews": [{
-	        "stars": 1,
-	        "body": "This gem is WAY too expensive for its rarity value.",
-	        "author": "turtleguyy@example.org",
-	        "createdOn": 1397490980837
+        "stars": 1,
+        "body": "This gem is WAY too expensive for its rarity value.",
+        "author": "turtleguyy@example.org",
+        "createdOn": 1397490980837
 	    }, {
-	        "stars": 1,
-	        "body": "BBW: High Shine != High Quality.",
-	        "author": "LouisW407@example.org",
-	        "createdOn": 1397490980837
+        "stars": 1,
+        "body": "BBW: High Shine != High Quality.",
+        "author": "LouisW407@example.org",
+        "createdOn": 1397490980837
 	    }, {
-	        "stars": 1,
-	        "body": "Don't waste your rubles!",
-	        "author": "nat@example.org",
-	        "createdOn": 1397490980837
+        "stars": 1,
+        "body": "Don't waste your rubles!",
+        "author": "nat@example.org",
+        "createdOn": 1397490980837
 	  }],
 	  "cleaness":true
-	}		
+	}
 ]
