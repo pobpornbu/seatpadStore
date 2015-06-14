@@ -1,0 +1,31 @@
+{
+	"id": 7,
+	"name": "หมอนอิง ขนาด 12X18 นิ้ว (ผ้า Canvas – Vintage)",
+  "category": "cushion",
+	"code": "PI12CV",
+	"description" : "ผลิตจากผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+	"size": "12 x 18 นิ้ว",
+	"thickness" : "2 นิ้ว",
+	"fabrice" : "ผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+	"inside": "เส้นใย POLYESTER",
+	"price": 2.95,
+	"canPurchase": true,
+	"soldOut": false,
+	"images":[
+		"img/pd7-s.png"
+	],
+	"reviews": [
+		{
+        "stars": 3,
+        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "author": "JimmyDean@example.org",
+        "createdOn": 1397490980837
+    }, {
+        "stars": 4,
+        "body": "Any gem with 12 faces is for me!",
+        "author": "gemsRock@example.org",
+        "createdOn": 1397490980837
+    }
+  ],
+  "cleaness": true
+}

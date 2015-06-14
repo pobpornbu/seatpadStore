@@ -14,15 +14,24 @@ var seatpadStore = angular.module('seatpadStore', [
 seatpadStore.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/seatpad', {
+      when('/product', {
         templateUrl: 'partials/seatpad-list.html',
         controller: 'ProductListCtrl'
       }).
-      when('/seatpad/:productId', {
+      when('/product/:productId', {
         templateUrl: 'partials/seatpad-detail.html',
         controller: 'ProductDetailCtrl'
       }).
+      when('/category/:category', {
+        templateUrl: 'partials/seatpad-category.html',
+        controller: 'ProductCategoryCtrl'
+      }).
+      when('/cart', {
+        templateUrl: 'partials/seatpad-add.html'
+        //controller: 'ProductAddCtrl'
+      }).
       otherwise({
-        redirectTo: '/seatpad'
+        redirectTo: '/product'
       });
-  }]);
+  }
+]);

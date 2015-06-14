@@ -1,5 +1,6 @@
 @import (reference) "cssstyle.less";
 @import "variable.less";
+@import "tweak.less";
 
 .location(gold {
   .component(theme {
@@ -11,7 +12,7 @@
       background-color: @brand-color-primary;
       box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 6px, rgba(0, 0, 0, 0.227451) 0px 3px 6px;
       transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-      -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); 
+      -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     });
 
     .part(font {
@@ -58,12 +59,16 @@
   background-color: #ccc;
 }
 
+.link {
+  color: @brand-color-primary;
+}
+
 .component(searchsort {
   .part(group {
     position: absolute;
     top: -40px;
     right: 25px;
-  });  
+  });
 });
 .component(search {
   .part(form {
@@ -87,18 +92,11 @@
 });
 
 // seatpad-detail
-.products {
-	list-style: none;
-}
 
-.product-listing, .product-listing-name {
-	display: block;
-	text-align: center;
-}
 
-.odd .product-listing-name{
-  margin-top: 18px;
-}
+// .odd .product-listing-name{
+//   margin-top: 18px;
+// }
 
 
 .component(product-thumbs{
@@ -134,7 +132,7 @@ img.product {
   float: left;
   margin-bottom: 2em;
   border: 1px solid #ccc;
-  width: 100%;
+  // width: 100%;
   max-width: 450px;
   height: 100%;
   &:first-child {
@@ -144,15 +142,16 @@ img.product {
   }
 }
 
-
-
-.product-listing-img {
-	width: 350px;
-}
-
-.product-listing-name {
-	
-}
+.component(product{
+  .part(wrap{
+    margin-bottom: 30px;
+  });
+  .part(img{
+    .option(list{
+      width: 350px;
+    });
+  });
+});
 
 .thumbnail {
 	width: 100px;
@@ -161,18 +160,6 @@ img.product {
 .gallery__img--current {
 	max-width: 800px;
 }
-
-// .ng-dirty.ng-invalid {
-// 	border-color: red;
-// }
-
-// .ng-dirty.ng-valid {
-// 	border-color: green;
-// }
-
-.tweak(clearBoth {
-	clear: both;
-});
 
 .dropdown-right {
 	display: inline-block;
@@ -232,6 +219,36 @@ img.phone {
   });
 });
 
+// Form
+// ------------------------------------
+.location(product-add{
+  .component(input{
+    .part(label{
+      .option(checkbox{
+        float: left;
+        line-height: @input-height;
+        margin-left: @gap-input;
+        });
+      });
+    .part(checkbox{
+        display: inline-block;
+        float: left;
+        width: auto;
+      });
+    });
+  });
+// Form Validation
+// ------------------------------------
+
+// before submit
+.ng-dirty {
+  .ng-invalid {
+     border-color: red;
+  }
+  .ng-valid {
+    border-color: green;
+  }
+}
 
 /*
  * animations css stylesheet

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="product row @product-add">
+    <div class="col-xs-12 center-block clearfix">
+      <h2>เพิ่มรายการสินค้า</h2>
+      <form role="form" ng­-submit="addProduct()">
+        <fieldset class="form-group">
+            <label for="productTitle" class="sr-only">ชื่อสินค้า</label>
+            <input type="text" class="form-control" ng-model="product.title" id="productTitle" placeholder="ชื่อสินค้า" title="ชื่อสินค้า" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="productDescription" class="sr-only">รายละเอียด</label>
+            <textarea class="form-control" ng-model="product.description" id="productDescription" placeholder="รายละเอียด" title="รายละเอียด" required=""></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="productCode" class="sr-only">รหัสสินค้า</label>
+            <input type="text" class="form-control" ng-model="product.code" id="productCode" placeholder="รหัสสินค้า" title="รหัสสินค้า" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <h4 class="theme__head">คุณสมบัติ</h4>
+            <label for="productSize" class="sr-only">ขนาด</label>
+            <input type="text" class="form-control" ng-model="product.size" id="productSize" placeholder="ขนาด" title="ขนาด" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="productThickness" class="sr-only">ความหนา</label>
+            <input type="text" class="form-control" ng-model="product.thickness" id="productThickness" placeholder="ความหนา" title="ความหนา" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="productFabric" class="sr-only">ลายผ้า</label>
+            <input type="text" class="form-control" ng-model="product.fabric" id="productFabric" placeholder="ลายผ้า" title="ลายผ้า" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="productInside" class="sr-only">ภายใน</label>
+            <input type="text" class="form-control" ng-model="product.inside" id="productInside" placeholder="ภายใน" title="ภายใน" required="">
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="checkbox" class="form-control input__checkbox" ng-model="product.cleaness" id="productCleaness" title="การทำความสะอาด" required="">
+            <label for="productCleaness" class="input__label --checkbox">การทำความสะอาด</label>
+        </fieldset>
+        <input type="submit" id="addProduct" class="[ btn btn-raised ] [ theme__btn --primary ]" value="ส่ง">
+      </form>
+    </div>
+  </div>
+</div>￼

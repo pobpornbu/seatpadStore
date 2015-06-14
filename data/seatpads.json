@@ -2,6 +2,7 @@
 	{
 		"id":1,
 		"name": "เบาะรองเก้าอี้ทอลาย",
+    "category": "seatpad",
 		"code": "CU17MT",
 		"description" : "ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
@@ -24,7 +25,7 @@
         "createdOn": 1397490980837
 	    },
 	    {
-        "stars": 1,
+        "stars": 2,
         "body": "อยากให้เชือกยาวกว่านี้ค่ะ",
         "author": "tim@example.org",
         "createdOn": 1397490980837
@@ -35,6 +36,7 @@
 	{
 		"id": 2,
 		"name": "เบาะรองเก้าอี้ Vintage",
+    "category": "seatpad",
 		"code": "CU17CV",
 		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก  มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว   นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
@@ -65,6 +67,7 @@
 	{
 		"id": 3,
 		"name": "เบาะรองนั่งเอนกประสงค์ทอลาย",
+    "category": "seatpad",
 		"code": "CU65MT",
 		"description" : "ผลิตจากผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
@@ -84,6 +87,7 @@
 	{
 		"id":4,
 		"name": "เบาะรองนั่งเอนกประสงค์ Vintage",
+    "category": "seatpad",
 		"code": "CU65CV",
 		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
@@ -101,6 +105,7 @@
 	{
 		"id": 5,
 		"name": "เบาะรองนั่งผ้าตรึงหลุม Vintage",
+    "category": "seatpad",
 		"code": "CU18CV",
 		"description" : "ผลิตจากผ้า Canvas  ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ใย POLYESTER คุณภาพ ให้ความนุ่มสบาย เหมาะสำหรับนั่งรองพื้นเก้าอี้ หรือ รองพื้นทั่วไป   ซักน้ำได้ทั้งใบ",
 		"size": "18X18 นิ้ว",
@@ -115,7 +120,7 @@
 		],
 		"reviews": [{
         "stars": 1,
-        "body": "เปลี่ยนลายผ้าได้มั้ยคับ รบกวนติดต่อกลับด้วยครับ",
+        "body": "ไม่ชอบลายผ้า ไม่เหมือนในรูป",
         "author": "turtleguyy@example.org",
         "createdOn": 1397490980837
 	    }, {
@@ -124,11 +129,130 @@
         "author": "LouisW407@example.org",
         "createdOn": 1397490980837
 	    }, {
-        "stars": 1,
+        "stars": 5,
         "body": "หนาดีนะคะ ชอบค่ะ",
         "author": "nat@example.org",
         "createdOn": 1397490980837
 	  }],
 	  "cleaness":true
-	}
+	},
+  {
+    "id": 6,
+    "name": "หมอนอิง ขนาด 12X18 นิ้ว (ผ้าซาติน)",
+    "category": "cushion",
+    "code": "PI12ST",
+    "description" : "ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "img/pd6-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  } ,
+  {
+    "id": 7,
+    "name": "หมอนอิง ขนาด 12X18 นิ้ว (ผ้า Canvas – Vintage)",
+    "category": "cushion",
+    "code": "PI12CV",
+    "description" : "ผลิตจากผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabrice" : "ผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "img/pd7-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  },
+  {
+    "id": 8,
+    "name": "หมอนอิง ขนาด 18X18 นิ้ว (ผ้าซาติน)",
+    "category": "cushion",
+    "code": "PI18ST",
+    "description" : "ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "18 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "img/pd8-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  },
+  {
+    "id": 9,
+    "name": "หมอนอิง ขนาด 18X18 นิ้ว (ผ้า Canvas – Vintage)",
+    "category": "cushion",
+    "code": "PI18CV",
+    "description" : "ผลิตจากผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabrice" : "ผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "img/pd9-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  }
 ]

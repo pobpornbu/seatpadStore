@@ -17,6 +17,7 @@
     </div>
   </div>
   <div class="row">
+    <h2 class="h2">{{categoryName}}</h2>
     <div class=" [ col-xs-12 col-sm-6 ] product__wrap" ng-repeat="product in products | filter:query | orderBy:orderSort" ng-class="{'pull-right': product.id == 3}">
       <a href="#/product/{{product.code}}" class="block-center">
         <img ng-src="{{product.images[0]}}" class="product__img --list">

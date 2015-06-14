@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class="+clearBoth">
-        <a href="javascript:void(0)" class="[ btn btn-raised ] [ theme__btn --primary ] pull-right" ng-show="product.canPurchase">Add to Cart</a>
+        <a href="#/cart/{{product.code}}" class="[ btn btn-raised ] [ theme__btn --primary ] pull-right" ng-show="product.canPurchase">Add to Cart</a>
         <h1 class="theme__head --productname">{{product.name}}</h1>
       </div>
       <p class="theme__font">{{product.description}}</p>
@@ -31,7 +31,7 @@
         <h4 class="theme__head">คุณสมบัติ</h4>
         <li class="product-property__list theme__font">ขนาด: {{product.size}}</li>
         <li class="product-property__list theme__font">ความหนา: {{product.thickness}}</li>
-        <li class="product-property__list theme__font">ลายผ้า: {{product.fabric}}</li>
+        <li class="product-property__list theme__font" fabric>ลายผ้า: </li>
         <li class="product-property__list theme__font">ภายใน: {{product.inside}}</li>
         <li class="product-property__list theme__font">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
       </ul>

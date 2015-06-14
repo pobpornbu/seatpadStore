@@ -1,3 +1,10 @@
+.block-center {
+  display: block;
+  text-align: center;
+}
+.\+clearBoth {
+  clear: both;
+}
 .\@gold .theme__body {
   background-color: #FFFFFF;
 }
@@ -40,6 +47,9 @@
 .icon-bar {
   background-color: #ccc;
 }
+.link {
+  color: #cac453;
+}
 .searchsort__group {
   position: absolute;
   top: -40px;
@@ -62,17 +72,6 @@
   top: 4px;
   display: inline-block;
   font-size: 22px;
-}
-.products {
-  list-style: none;
-}
-.product-listing,
-.product-listing-name {
-  display: block;
-  text-align: center;
-}
-.odd .product-listing-name {
-  margin-top: 18px;
 }
 .product-thumbs {
   padding: 0;
@@ -105,7 +104,6 @@ img.product {
   float: left;
   margin-bottom: 2em;
   border: 1px solid #ccc;
-  width: 100%;
   max-width: 450px;
   height: 100%;
 }
@@ -114,7 +112,10 @@ img.product:first-child {
   overflow: hidden;
   position: relative;
 }
-.product-listing-img {
+.product__wrap {
+  margin-bottom: 30px;
+}
+.product__img.\--list {
   width: 350px;
 }
 .thumbnail {
@@ -123,9 +124,6 @@ img.product:first-child {
 }
 .gallery__img--current {
   max-width: 800px;
-}
-.\+clearBoth {
-  clear: both;
 }
 .dropdown-right {
   display: inline-block;
@@ -166,6 +164,22 @@ img.phone:first-child {
 }
 .\@product-list .theme__font.\--productname {
   font-size: 20px;
+}
+.\@product-add .input__label.\--checkbox {
+  float: left;
+  line-height: 34px;
+  margin-left: 15px;
+}
+.\@product-add .input__checkbox {
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+.ng-dirty .ng-invalid {
+  border-color: red;
+}
+.ng-dirty .ng-valid {
+  border-color: green;
 }
 /*
  * animations css stylesheet

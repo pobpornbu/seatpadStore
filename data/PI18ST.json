@@ -1,0 +1,26 @@
+{
+	"id": 8,
+	"name": "หมอนอิง ขนาด 18X18 นิ้ว (ผ้าซาติน)",
+  "category": "cushion",
+	"code": "PI18ST",
+	"description" : "ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+	"size": "18 x 18 นิ้ว",
+	"thickness" : "2 นิ้ว",
+	"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+	"inside": "เส้นใย POLYESTER",
+	"price": 2.95,
+	"canPurchase": true,
+	"soldOut": false,
+	"images":[
+		"img/pd8-s.png"
+	],
+	"reviews": [
+		{
+        "stars": 3,
+        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "author": "JimmyDean@example.org",
+        "createdOn": 1397490980837
+    }
+  ],
+  "cleaness": true
+}

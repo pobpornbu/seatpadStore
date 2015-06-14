@@ -4,23 +4,12 @@
   <meta charset="utf-8">
   <title>Seatpad Store</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
 
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
-  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/apps.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/animations.js"></script>
 </head>
 <body class="theme__body">
     <div class="navbar theme__navbar">
@@ -31,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand theme__font --brand" href="#">เบาะรองนั่งอเนกประสงค์</a>
+        <a class="navbar-brand theme__font --brand" href="#/product">เบาะรองนั่งอเนกประสงค์</a>
       </div>
       <div class="collapse navbar-collapse navbar-responsive-collapse" id="menu-lists">
         <!--<div class="navbar-right">
@@ -55,7 +44,19 @@
       </div>
     </div>
   <div class="view-container">
-    <div ng-view class="view-frame"></div>
+    <div class="view-frame" ng-view></div>
   </div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
