@@ -61,7 +61,7 @@
   </div>
   <div class="row">
     <div class=" [ col-xs-12 col-sm-6 ] product__wrap text-center" ng-repeat="product in products | filter:query | orderBy:orderSort" ng-class="{'item-last': product.id == 5}">
-      <a href="#/product/{{product.code}}" class="block-center">
+      <a href="#/product/{{product.code}}/{{product.fabric}}" class="block-center">
         <img ng-src="{{product.images[0]}}" class="product__img --list">
       </a>
       <h2 class="block-center">
