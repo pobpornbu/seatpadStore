@@ -1,61 +1,83 @@
 [
 	{
-		"id":1,
-		"name": "เบาะรองเก้าอี้ทอลาย",
+		"id": 1,
+		"name": "Trandy",
+    "category": "seatpad",
 		"code": "CU17MT",
-		"description" : "ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
+		"description" : "เบาะรองเก้าอี้ทอลาย ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "ผ้าทอลายหนาพิเศษ โดยท่านสามารถเลือกลายผ้าได้",
+		"fabric" : "hessian",
 		"inside": "ฟองน้ำ",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images": [
-			"img/pd1.png",
-			"img/pd1-2.jpg",
-			"img/pd1-3.jpg"
+			"images/pd1.png",
+			"images/pd1-2.jpg",
+			"images/pd1-3.jpg"
 		],
 		"reviews": [
 			{
         "stars": 5,
-        "body": "I love this gem!",
+        "body": "เบาะนุ่มดีครับ",
         "author": "joe@example.org",
         "createdOn": 1397490980837
 	    },
 	    {
-        "stars": 1,
-        "body": "This gem sucks.",
+        "stars": 2,
+        "body": "อยากให้เชือกยาวกว่านี้ค่ะ",
         "author": "tim@example.org",
         "createdOn": 1397490980837
 	    }
 	  ],
 	  "cleaness":true
 	},
+  {
+    "id": 2,
+    "name": "Lindary",
+    "category": "seatpad",
+    "code": "CU65MT",
+    "description" : "เบาะรองนั่งเอนกประสงค์ทอลาย ผลิตจากผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
+    "size": "17 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabric" : "hessian",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images": [
+      "images/pd3.png",
+      "images/pd3-2.jpg",
+      "images/pd3-3.jpg"
+    ],
+    "cleaness":true
+  },
 	{
-		"id": 2,
-		"name": "เบาะรองเก้าอี้ Vintage",
+		"id": 3,
+		"name": "Vintago",
+    "category": "seatpad",
 		"code": "CU17CV",
-		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก  มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว   นั่งสบาย มีซิปถอดผ้าซักได้",
+		"description" : "เบาะรองเก้าอี้ Vintage ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก  มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว   นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+		"fabric" : "printed-canvas",
 		"inside": "ฟองน้ำ",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images":[
-			"img/pd2.png"
+			"images/pd2.png"
 		],
 		"reviews": [
 			{
         "stars": 3,
-        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "body": "ชอบลายค่ะ มีหลายลายให้เลือกดี",
         "author": "JimmyDean@example.org",
         "createdOn": 1397490980837
 	    }, {
         "stars": 4,
-        "body": "Any gem with 12 faces is for me!",
+        "body": "ส่งให้เร็วมากเลย ชอบๆ",
         "author": "gemsRock@example.org",
         "createdOn": 1397490980837
 	    }
@@ -63,72 +85,174 @@
 	  "cleaness":true
 	},
 	{
-		"id": 3,
-		"name": "เบาะรองนั่งเอนกประสงค์ทอลาย",
-		"code": "CU65MT",
-		"description" : "ผลิตจากผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
-		"size": "17 นิ้ว",
-		"thickness" : "2 นิ้ว",
-		"fabrice" : "ผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว โดยท่านสามารถเลือกลายผ้าได้",
-		"inside": "เส้นใย POLYESTER",
-		"price": 2.95,
-		"canPurchase": true,
-		"soldOut": false,
-		"images": [
-			"img/pd3.png",
-			"img/pd3-2.jpg",
-			"img/pd3-3.jpg"
-		],
-		"cleaness":true
-	},
-	{
-		"id":4,
-		"name": "เบาะรองนั่งเอนกประสงค์ Vintage",
+		"id": 4,
+		"name": "Picnic",
+    "category": "seatpad",
 		"code": "CU65CV",
-		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
+		"description" : "เบาะรองนั่งเอนกประสงค์ Vintage ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ",
+		"fabric" : "printed-canvas",
 		"inside": "เส้นใย POLYESTER",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images":[
-			"img/pd4.png"
+			"images/pd4.png"
 		],
 		"cleaness":true
 	},
 	{
 		"id": 5,
-		"name": "เบาะรองนั่งผ้าตรึงหลุม Vintage",
+		"name": "Softy",
+    "category": "seatpad",
 		"code": "CU18CV",
-		"description" : "ผลิตจากผ้า Canvas  ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ใย POLYESTER คุณภาพ ให้ความนุ่มสบาย เหมาะสำหรับนั่งรองพื้นเก้าอี้ หรือ รองพื้นทั่วไป   ซักน้ำได้ทั้งใบ",
+		"description" : "เบาะรองนั่งผ้าตรึงหลุม Vintage ผลิตจากผ้า Canvas  ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ใย POLYESTER คุณภาพ ให้ความนุ่มสบาย เหมาะสำหรับนั่งรองพื้นเก้าอี้ หรือ รองพื้นทั่วไป   ซักน้ำได้ทั้งใบ",
 		"size": "18X18 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ",
+		"fabric" : "printed-canvas",
 		"inside": "เส้นใย POLYESTER",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images":[
-			"img/pd5.png"
+			"images/pd5.png"
 		],
 		"reviews": [{
         "stars": 1,
-        "body": "This gem is WAY too expensive for its rarity value.",
+        "body": "ไม่ชอบลายผ้า ไม่เหมือนในรูป",
         "author": "turtleguyy@example.org",
         "createdOn": 1397490980837
 	    }, {
         "stars": 1,
-        "body": "BBW: High Shine != High Quality.",
+        "body": "มีบริการส่งที่บ้านมั้ยคะ",
         "author": "LouisW407@example.org",
         "createdOn": 1397490980837
 	    }, {
-        "stars": 1,
-        "body": "Don't waste your rubles!",
+        "stars": 5,
+        "body": "หนาดีนะคะ ชอบค่ะ",
         "author": "nat@example.org",
         "createdOn": 1397490980837
 	  }],
 	  "cleaness":true
-	}
+	},
+  {
+    "id": 6,
+    "name": "Little Satino",
+    "category": "cushion",
+    "code": "PI12ST",
+    "description" : "หมอนอิง ขนาด 12X18 นิ้ว ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabric" : "printed-satin",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "images/pd6-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  } ,
+  {
+    "id": 7,
+    "name": "Little Flory",
+    "category": "cushion",
+    "code": "PI12CV",
+    "description" : "หมอนอิง ขนาด 12X18 นิ้ว ผลิตจากผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabric" : "printed-canvas",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "images/pd7-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  },
+  {
+    "id": 8,
+    "name": "Satino",
+    "category": "cushion",
+    "code": "PI18ST",
+    "description" : "หมอนอิง ขนาด 18X18 นิ้ว ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "18 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabric" : "printed-satin",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "images/pd8-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  },
+  {
+    "id": 9,
+    "name": "Flory",
+    "category": "cushion",
+    "code": "PI18CV",
+    "description" : "หมอนอิง ขนาด 18X18 นิ้ว ผลิตจากผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+    "size": "12 x 18 นิ้ว",
+    "thickness" : "2 นิ้ว",
+    "fabric" : "printed-canvas",
+    "inside": "เส้นใย POLYESTER",
+    "price": 2.95,
+    "canPurchase": true,
+    "soldOut": false,
+    "images":[
+      "images/pd9-s.png"
+    ],
+    "reviews": [
+      {
+          "stars": 3,
+          "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+          "author": "JimmyDean@example.org",
+          "createdOn": 1397490980837
+      }, {
+          "stars": 4,
+          "body": "Any gem with 12 faces is for me!",
+          "author": "gemsRock@example.org",
+          "createdOn": 1397490980837
+      }
+    ],
+    "cleaness": true
+  }
 ]

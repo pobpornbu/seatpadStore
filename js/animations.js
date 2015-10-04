@@ -1,6 +1,6 @@
 var productAnimations = angular.module('productAnimations', ['ngAnimate']);
 
-productAnimations.animation('.product', function() {
+productAnimations.animation('.gallery__image', function() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {
@@ -8,13 +8,13 @@ productAnimations.animation('.product', function() {
     }
     element.css({
       position: 'absolute',
-      top: 500,
+      bottom: 500,
       left: 0,
       display: 'block'
     });
 
     jQuery(element).animate({
-      top: 0
+      bottom: 0
     }, done);
 
     return function(cancel) {
@@ -31,11 +31,11 @@ productAnimations.animation('.product', function() {
     element.css({
       position: 'absolute',
       left: 0,
-      top: 0
+      bottom: 0
     });
 
     jQuery(element).animate({
-      top: -500
+      bottom: -500
     }, done);
 
     return function(cancel) {

@@ -1,0 +1,22 @@
+
+$gold:                    rgb(195, 174, 103); // #c3ae67
+
+$lightest-gold:           #E4DDC5;
+$lighter-gold:            rgb(240, 220, 155); // #f0dc9b
+$light-gold:              lighten($gold, 5%);
+$dark-gold:               darken($gold, 5%);
+$darker-gold:             darken($gold, 15%);
+
+$green:                   rgb(48, 55, 49);
+$light-green:             rgb(54, 65, 56);
+
+$head-font:               'Arbutus Slab', Arial, sans-serif;
+$head-color:              $lighter-gold;
+
+$content-font:            'Roboto', Arial, sans-serif;
+$content-color:           $gold;
+
+$link-color:              #718475;
+$input-color:             mix($green, $gold, 50%);
+
+$hilight-color:           #E89E69;

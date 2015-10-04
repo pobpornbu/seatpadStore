@@ -1,17 +1,18 @@
-	{ 
-		"id":4,
-		"name": "เบาะรองนั่งเอนกประสงค์ Vintage", 
-		"code": "CU65CV", 
-		"description" : "ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
+	{
+		"id": 4,
+		"name": "Picnic",
+  	"category": "seatpad",
+		"code": "CU65CV",
+		"description" : "เบาะรองนั่งเอนกประสงค์ Vintage ผลิตจากผ้า Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก ภายในทำจากเส้นใย POLYESTER หุ้มด้วยผ้า NIDDLE PUNCH  มีซิปถอดผ้าซักได้   เหมาะสำหรับนั่งเล่นได้ทั่วไป",
 		"size": "17 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ",
+		"fabric" : "ผ้าแคนวาส ลายวินเทจ",
 		"inside": "เส้นใย POLYESTER",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images":[
-			"img/pd4.png"
+			"images/pd4.png"
 		],
 		"cleaness":true
 	}

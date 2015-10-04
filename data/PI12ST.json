@@ -1,0 +1,31 @@
+{
+	"id": 6,
+	"name": "Little Satino",
+  "category": "cushion",
+	"code": "PI12ST",
+	"description" : "หมอนอิง ขนาด 12X18 นิ้ว ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+	"size": "12 x 18 นิ้ว",
+	"thickness" : "2 นิ้ว",
+	"fabric" : "ผ้าซาติน ลายวินเทจ",
+	"inside": "เส้นใย POLYESTER",
+	"price": 2.95,
+	"canPurchase": true,
+	"soldOut": false,
+	"images":[
+		"images/pd6-s.png"
+	],
+	"reviews": [
+		{
+        "stars": 3,
+        "body": "I think this gem was just OK, could honestly use more shine, IMO.",
+        "author": "JimmyDean@example.org",
+        "createdOn": 1397490980837
+    }, {
+        "stars": 4,
+        "body": "Any gem with 12 faces is for me!",
+        "author": "gemsRock@example.org",
+        "createdOn": 1397490980837
+    }
+  ],
+  "cleaness": true
+}

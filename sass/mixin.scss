@@ -1,0 +1,28 @@
+@mixin underline-middle($color: $white, $gap: 47%) {
+  &:after {
+    content: "";
+    display: block;
+    background-color: $color;
+    padding-top: 1px;
+    margin-top: 15px;
+    position: absolute;
+    left: $gap;
+    right: $gap;
+  }
+}
+
+
+@mixin underline-left($color: $dark-gold, $width: 40%, $left: 15%, $bottom: -10px) {
+    padding: 15px 0 0; position: relative; margin-bottom: 30px;//margin: 10px 0 0;
+    &:before {
+        content:''; display: block; width: $width; height:1px; //margin-top: 10px;
+        position: absolute; left: $left; bottom: $bottom; // top: $font-size;
+        background-color: $color;
+    }
+}
+
+@mixin opacity($val){
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity="+$val * 100 +")"; // IE8
+    filter: alpha(opacity=$val * 100); // IE 5-7
+    opacity: $val;
+}

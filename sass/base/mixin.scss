@@ -1,0 +1,12 @@
+@mixin underline-middle($color: $white, $gap: 47%) {
+    &:after {
+        content: "";
+        display: block;
+        background-color: $color;
+        padding-top: 1px;
+        margin-top: 15px;
+        position: absolute;
+        left: $gap;
+        right: $gap;
+    }
+}

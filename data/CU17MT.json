@@ -1,19 +1,20 @@
-	{ 
-		"id":1,
-		"name": "เบาะรองเก้าอี้ทอลาย", 
-		"code": "CU17MT", 
-		"description" : "ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
+	{
+		"id": 1,
+		"name": "Trandy",
+	  "category": "seatpad",
+		"code": "CU17MT",
+		"description" : "เบาะรองเก้าอี้ทอลาย ผลิตจากผ้าทอลายหนาพิเศษ มีลายในตัว สวยน่ารัก มีเชือกผูกกับเก้าอี้  ภายในใช้ฟองน้ำคุณภาพ หนา 2 นิ้ว นั่งสบาย มีซิปถอดผ้าซักได้",
 		"size": "17X17 นิ้ว",
 		"thickness" : "2 นิ้ว",
-		"fabrice" : "ผ้าทอลายหนาพิเศษ โดยท่านสามารถเลือกลายผ้าได้",
+		"fabric" : "ผ้าทอลาย",
 		"inside": "ฟองน้ำ",
 		"price": 2.95,
 		"canPurchase": true,
 		"soldOut": false,
 		"images": [
-			"img/pd1.png",
-			"img/pd1-2.jpg",
-			"img/pd1-3.jpg"
+			"images/pd1.png",
+			"images/pd1-2.jpg",
+			"images/pd1-3.jpg"
 		],
 		"reviews": [
 			{
@@ -21,7 +22,7 @@
 	        "body": "I love this gem!",
 	        "author": "joe@example.org",
 	        "createdOn": 1397490980837
-	    }, 
+	    },
 	    {
 	        "stars": 1,
 	        "body": "This gem sucks.",
