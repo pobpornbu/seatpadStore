@@ -1,18 +1,18 @@
 {
 	"id": 6,
-	"name": "หมอนอิง ขนาด 12X18 นิ้ว (ผ้าซาติน)",
+	"name": "Little Satino",
   "category": "cushion",
 	"code": "PI12ST",
-	"description" : "ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
+	"description" : "หมอนอิง ขนาด 12X18 นิ้ว ผลิตจากผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก ภายในใช้ไส้ใย POLYESTER คุณภาพ มีซิปถอดผ้าซักได้",
 	"size": "12 x 18 นิ้ว",
 	"thickness" : "2 นิ้ว",
-	"fabrice" : "Canvas ชนิดเนื้อหนาพิเศษ พิมพ์ลายวินเทจ โดยท่านสามารถเลือกลายผ้าได้",
+	"fabric" : "ผ้าซาติน ลายวินเทจ",
 	"inside": "เส้นใย POLYESTER",
 	"price": 2.95,
 	"canPurchase": true,
 	"soldOut": false,
 	"images":[
-		"img/pd6-s.png"
+		"images/pd6-s.png"
 	],
 	"reviews": [
 		{

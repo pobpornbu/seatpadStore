@@ -1,0 +1,22 @@
+{
+  "id": 2,
+  "name": "print-satin",
+  "title" : "ผ้าแคนวาส ลายวินเทจ",
+  "category": "satin",
+  "code": "ST",
+  "description" : "ผ้าซาติน เนื้อผ้านุ่มสบาย พิมพ์ลายวินเทจ สวยน่ารัก",
+  "size": "17X17 นิ้ว",
+  "inside": "ฟองน้ำ",
+  "price": 2.95,
+  "canPurchase": true,
+  "soldOut": false,
+  "images":[
+    "images/fabric/ST-01.jpg",
+    "images/fabric/ST-02.jpg",
+    "images/fabric/ST-03.jpg",
+    "images/fabric/ST-04.jpg",
+    "images/fabric/ST-05.jpg",
+    "images/fabric/ST-06.jpg"
+  ],
+  "cleaness": true
+}

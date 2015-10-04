@@ -6,19 +6,22 @@ var StoreController = angular.module('StoreController', []);
 
 StoreController.controller('ProductListCtrl', ['$scope', 'Seatpad',
   function($scope, Seatpad) {
-    $scope.products = Seatpad.query();
+    $scope.products = Seatpad.Productdb.query();
     $scope.orderSort = 'id';
   }
 ]);
 
 StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seatpad',
   function($scope, $routeParams, Seatpad) {
-    $scope.product = Seatpad.get({productId: $routeParams.productId},
+
+    $scope.product = Seatpad.Productdb.get({productId: $routeParams.productId},
       function(product) {
         console.log($scope.product);
         $scope.mainImageUrl = product.images[0];
       }
     );
+
+    $scope.customfabric = true;
 
     $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
@@ -29,18 +32,85 @@ StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seat
       product.reviews.push($scope.review);
       $scope.review = {};
     };
+
+    $scope.fabric = Seatpad.Fabricdb.get({fabric: $routeParams.fabric},
+      function(fabric){
+        console.log("Item");
+        $scope.fabricImage = fabric.images[0];
+    });
+
   }
 ]);
 
 StoreController.controller('ProductCategoryCtrl', ['$scope', '$routeParams', 'Seatpad',
   function($scope, $routeParams, Seatpad) {
-    $scope.products = Seatpad.query();
+    $scope.products = Seatpad.Productdb.query();
     $scope.categoryName = $routeParams.category;
-    console.log($scope.categoryName);
-    $scope.orderSort = 'id';
     $scope.query = $scope.categoryName;
+    $scope.orderSort = 'id';
+    // console.log($scope.categoryName);
   }
 ]);
+
+StoreController.directive('aboutgal', function(){
+  var directive = {
+    restrict: 'A',
+    link: function (scope, element, attrs) {
+      scope.$watch(attrs.aboutgal, function(){
+        element.lightSlider({
+          item: 1,
+          pager: false
+        });
+      });
+    }
+  };
+  return directive;
+});
+
+StoreController.directive('fabricgal', function(){
+  var fabricgaldr = {
+    restrict: 'A',
+    link: function (scope, element, attrs) {
+      scope.$watch(attrs.fabricgal, function(){
+        console.log('ready lightSlider');
+        element.lightSlider({
+          item: 5,
+          pager: false,
+          responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                item: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                item: 1
+              }
+            }
+          ]
+        });
+      });
+    }
+  };
+  return fabricgaldr;
+});
+
+StoreController.directive('fabricbtn', function(){
+  var fabricbtndr = {
+    restrict: 'A',
+    link: function (scope, element, attrs) {
+      scope.$watch(attrs.fabricbtn, function(){
+        element.click(function(){
+          // element.next('.js-gallery-fabric').toggleClass('show');
+          element.next().toggleClass('show');
+        });
+      });
+    }
+  };
+  return fabricbtndr;
+});
 
 StoreController.directive('fabric', function(){
   var validElement = angular.element("<button type='button' class='btn btn-default' data-container='body' data-toggle='popover' data-placement='left' data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.'>Popover on left</button>");
@@ -54,9 +124,9 @@ StoreController.directive('fabric', function(){
     //     });
     // };
 
-    var popover = function(scope){
-      validElement.popover({"placement": "right"});
-    }
+  var popover = function(scope){
+    validElement.popover({"placement": "right"});
+  }
 
   return {
     restrict: "A",

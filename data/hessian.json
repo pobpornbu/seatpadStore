@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "name": "hessian",
+  "title" : "ผ้าทอลาย",
+  "category": "hessian",
+  "code": "M-G8",
+  "description" : "ผ้าทอลาย ชนิดเนื้อหนาพิเศษ มีลายในตัว สวยน่ารัก",
+  "size": "17X17 นิ้ว",
+  "inside": "ฟองน้ำ",
+  "price": 2.95,
+  "canPurchase": true,
+  "soldOut": false,
+  "images":[
+    "images/fabric/M-G812-01.JPG",
+    "images/fabric/M-G812-03.JPG",
+    "images/fabric/M-G812-04.JPG",
+    "images/fabric/M-G813-05.JPG",
+    "images/fabric/M-G814-05.JPG",
+    "images/fabric/M-G811-04.JPG",
+    "images/fabric/M-G810-06.JPG",
+    "images/fabric/M-G810-09.JPG",
+    "images/fabric/M-G810-10.JPG",
+    "images/fabric/M-G810-11.JPG",
+    "images/fabric/M-G810-13.JPG",
+    "images/fabric/M-G810-15.JPG",
+    "images/fabric/M-G810-16.JPG"
+  ],
+  "cleaness": true
+}

@@ -1,0 +1,38 @@
+.head {
+  color: $head-color;
+  &.\--h2 {
+    font: 700 36px $head-font;
+  }
+  &.\--h3 {
+    font: 400 20px $content-font;
+    letter-spacing: 2px;
+  }
+  &.\--topic {
+    font: 400 16px $content-font;
+    letter-spacing: 1px;
+  }
+  &.\--line {
+    @include underline-left($darker-gold, 20%, 0);
+    @media screen and (min-width: 768px) {
+      @include underline-left($darker-gold, 15%, 0);
+    }
+  }
+}
+
+.content{
+  font:300 15px $content-font;
+  color: $content-color;
+}
+
+.blockquote {
+  border-left: 3px solid $input-color;
+}
+
+a, .link {
+  color: $link-color;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    color: $hilight-color;
+    text-decoration: none;
+  }
+}

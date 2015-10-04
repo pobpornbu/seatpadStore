@@ -1,17 +1,11 @@
 <div class="container">
-  <div class="product row @product-detail">
-    <div class="col-xs-12 center-block clearfix" ng-hide="product.soldOut">
+  <div class="product row @product">
+    <div class="col-xs-12 center-block clearfix detail-content__container" ng-hide="product.soldOut">
       <product-title></product-title>
-      <div class="gallery">
-    			<!-- <img ng-src="{{mainImageUrl}}" alt="{{product.name}}" style="width:350px"> -->
-      		<!-- <ul class="list-inline thumbs"> -->
-      			<!-- <li class="thumbnail" ng-repeat="image in product.images"> -->
-      				<!-- <img alt="{{product.name}}" ng-src="{{image}}" style="width:100px"  ng-click="setImage(image)"> -->
-      			<!-- </li> -->
-      		<!-- </ul> -->
+      <div class="detail-gallery__group">
       		<!-- We're only changing the top of the file -->
-        <div class="product-images clearfix">
-          <img ng-src="{{img}}" ng-repeat="img in product.images" class="product" ng-class="{active:mainImageUrl==img}">
+        <div class="detail-gallery__wrap --{{product.category}} clearfix">
+          <img ng-src="{{img}}" ng-repeat="img in product.images" class="gallery__image --detail" ng-class="{active:mainImageUrl==img}">
         </div>
         <ul class="product-thumbs clearfix">
           <li class="product-thumbs__list" ng-repeat="img in product.images">
@@ -19,53 +13,59 @@
           </li>
         </ul>
       </div>
-      <div class="+clearBoth">
-        <a href="#/cart/{{product.code}}" class="[ btn btn-raised ] [ theme__btn --primary ] pull-right" ng-show="product.canPurchase">Add to Cart</a>
-        <h1 class="theme__head --productname">{{product.name}}</h1>
-      </div>
-      <p class="theme__font">{{product.description}}</p>
-      <h4 class="theme__head">รายละเอียด</h4>
-      <p class="theme__font">รหัสสินค้า: {{product.code}}</p>
-      <p class="theme__font">{{product.description}}</p>
-      <ul class="product-property">
-        <h4 class="theme__head">คุณสมบัติ</h4>
-        <li class="product-property__list theme__font">ขนาด: {{product.size}}</li>
-        <li class="product-property__list theme__font">ความหนา: {{product.thickness}}</li>
-        <li class="product-property__list theme__font" fabric>ลายผ้า: </li>
-        <li class="product-property__list theme__font">ภายใน: {{product.inside}}</li>
-        <li class="product-property__list theme__font">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
+      <h2 class="head --h2">{{product.name}}</h2>
+      <p class="content">{{product.description}}</p>
+
+      <h3 class="head --topic">รายละเอียด</h3>
+      <p class="content">รหัสสินค้า: {{product.code}}</p>
+
+      <h3 class="head --topic">คุณสมบัติ</h3>
+      <ul class="product-property no-list-style">
+        <li class="product-property__list content">ขนาด: {{product.size}}</li>
+        <li class="product-property__list content">ความหนา: {{product.thickness}}</li>
+        <li class="product-property__list content">ลายผ้า: {{product.fabric}}
+          <span class="link">เลือกลายผ้า</span>
+          <ul class="js-gallery-fabric fabric-gallery__wrap change-gallery-arrow" fabricgal>
+            <li ng-repeat="fabric in fabric.images" ng-class="{active:fabricImage==fabric}">
+              <img ng-src="{{fabric}}" class="gallery__img --fabric">
+            </li>
+          </ul>
+        </li>
+        <li class="product-property__list content">ภายใน: {{product.inside}}</li>
+        <li class="product-property__list content">การทำความสะอาด: {{product.cleaness | checkmark }}</li>
       </ul>
+
       <div>
-        <h4 class="theme__head">คำติชม</h4>
+        <h3 class="head --topic">คำติชม</h3>
         <div ng-repeat="review in product.reviews">
-          <blockquote class="theme__font">
-            <strong class="theme__font">{{review.stars}} Stars</strong>
-            {{review.body}}
-            <cite class="theme__font clearfix">— {{review.author}}</cite>
+          <blockquote class="blockquote">
+            <strong class="content">{{review.stars}} Stars</strong>
+            <span class="content">{{review.body}}</span>
+            <cite class="content clearfix">— {{review.author}}</cite>
           </blockquote>
         </div>
         <form name="reviewForm" ng-submit="reviewForm.$valid && addReview(product)" novalidate>
           <!--  Live Preview -->
-          <blockquote class="theme__font">
-              <strong class="theme__font">{{review.stars}} Stars</strong>
-              {{review.body}}
-              <cite class="theme__font clearfix">— {{review.author}}</cite>
+          <blockquote class="blockquote">
+              <strong class="content">{{review.stars}} Stars</strong>
+              <span class="content">{{review.body}}</span>
+              <cite class="content clearfix">— {{review.author}}</cite>
           </blockquote>
 
           <!--  Review Form -->
           <fieldset class="form-group">
-            <select class="form-control" ng-model="review.stars" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars" required>
+            <select class="form-control --primary" ng-model="review.stars" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars" required>
                 <option value="">โปรดให้คะแนนสินค้า</option>
             </select>
           </fieldset>
           <fieldset class="form-group">
-            <textarea class="form-control" ng-model="review.body"  placeholder="โปรดให้คำแนะนำสินค้า" title="Review" required></textarea>
+            <textarea class="form-control --primary" ng-model="review.body"  placeholder="โปรดให้คำแนะนำสินค้า" title="Review" required></textarea>
           </fieldset>
           <fieldset class="form-group">
-            <input type="email" class="form-control" ng-model="review.author" placeholder="jimmyDean@example.org" title="Email" required />
+            <input type="email" class="form-control --primary" ng-model="review.author" placeholder="jimmyDean@example.org" title="Email" required />
           </fieldset>
           <fieldset class="form-group">
-            <input type="submit" class="[ btn theme__btn --primary ] pull-right" value="Submit Review" />
+            <input type="submit" class="[ btn --primary ] pull-right" value="Submit Review" />
           </fieldset>
         </form>
       </div>

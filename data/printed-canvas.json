@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "name": "printed-canvas",
+  "title" : "ผ้าแคนวาส พิมพ์ลาย",
+  "category": "printed-canvas",
+  "code": "CAN",
+  "description" : "ผ้า Canvas เนื้อหนาพิเศษ พิมพ์ลายวินเทจ สวยน่ารัก",
+  "size": "17X17 นิ้ว",
+  "inside": "ฟองน้ำ",
+  "price": 2.95,
+  "canPurchase": true,
+  "soldOut": false,
+  "images":[
+    "images/fabric/CAN-01.jpg",
+    "images/fabric/CAN-02.jpg",
+    "images/fabric/CAN-03.jpg",
+    "images/fabric/CAN-04.jpg",
+    "images/fabric/CAN-05.jpg",
+    "images/fabric/CAN-06.jpg",
+    "images/fabric/CAN-07.jpg",
+    "images/fabric/CAN-08.jpg",
+    "images/fabric/CAN-09.jpg",
+    "images/fabric/CAN-10.jpg",
+    "images/fabric/CAN-11.jpg",
+    "images/fabric/CAN-12.jpg"
+  ],
+  "cleaness": true
+}

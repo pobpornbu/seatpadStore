@@ -1,29 +1,80 @@
 <!--Body content-->
-<div class="container @product-list">
-  <div class="row text-right searchsort__group">
-    <form class="search__form" role="search">
-      <div class="form-group search__wrap">
-        <input type="text" class="form-control search__input" placeholder="Search" ng-model="query">
-        <i class="mdi-action-search search__icon"></i>
+<section class="container">
+  <div class="row @about">
+    <div class="about-gallery__container">
+      <figure class="about-gallery__wrap">
+        <ul class="js-gallery-about change-gallery-arrow" aboutgal>
+            <li>
+              <a href="#/product" target="_self">
+                <img class="gallery__img" src="/seatpadStore/images/about-cushion-1.jpg" alt="หมอนอิง" title="หมอนอิง" />
+              </a>
+            </li>
+            <li>
+              <a href="#/product" target="_self">
+                <img class="gallery__img" src="/seatpadStore/images/about-cushion-2.jpg" alt="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" title="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" />
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#/product" target="_self">
+                <img class="gallery__img" src="/seatpadStore/images/slide-img3.jpg" alt="หมอนอิง ขนาดต่างๆ" />
+              </a>
+            </li> -->
+        </ul>
+      </figure>
+    </div>
+    <article class="about-text__container">
+      <blockquote class="head --quote">Home Sweeter Home</blockquote>
+      <p class="content">Cuddle เป็นผู้ผลิตเบาะรองนั่งและหมอนอิง มีขนาดและรูปแบบที่หลากหลาย รวมถึงเนื้อผ้าและลายผ้า เพื่อตอบสนองความต้องการของลูกค้าอย่างแท้จริง เบาะรองนั่งมีสองขนาด ทั้งใช้นั่งบนพื้นเหมาะกับโต๊ะญี่ปุ่น สวดมนต์ นั่งสมาธิ หรือนำไปถวายที่วัด นอกจากนี้ยังไว้สำหรับเป็นเบาะบนเก้าอี้ เพื่อความสบายในการนั่ง คู่กับหมอนอิงบนโซฟาอีกด้วย</p>
+      <p class="content">ทั้งนี้เรายังรับผลิตตาม ORDER ลูกค้าทุกขนาด ทุกสี จัดส่งตรงตามเวลาที่กำหนดอีกด้วย</p>
+    </article>
+  </div>
+</section>
+<section class="container @product">
+  <div class="row">
+    <h2 class="col-xs-12 col-sm-5 head --h2">Product</h2>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 search-filter__container">
+      <form class="search__form pull-left" role="search">
+        <div class="form-group search__wrap">
+          <input type="text" class="form-control search__input --primary" placeholder="Search" ng-model="query">
+          <i class="mdi-action-search search__icon --primary"></i>
+        </div>
+      </form>
+      <div class="form-control-wrapper navbar-gap filter__container pull-left">
+        <select class="form-control" ng-model="orderSort">
+          <option value="name">Alphabetical</option>
+          <option value="id">Newest</option>
+        </select>
+        <span class="material-input"></span>
       </div>
-    </form>
-    <p class="navbar-gap">Sort by:</p>
-    <div class="form-control-wrapper navbar-gap">
-      <select class="form-control" ng-model="orderSort">
-        <option value="name">Alphabetical</option>
-        <option value="id">Newest</option>
-      </select>
-      <span class="material-input"></span>
     </div>
   </div>
   <div class="row">
-    <div class=" [ col-xs-12 col-sm-6 ] product__wrap" ng-repeat="product in products | filter:query | orderBy:orderSort" ng-class="{'pull-right': product.id == 3}">
+    <div class="col-xs-12 col-sm-5"><h3 class="head --h3 --line">Seatpads</h3></div>
+    <div class="col-xs-12 col-sm-7">
+      <p class="content seatpad__content
+      ">
+        เบาะรองนั่ง cuddle มีหลากหลายรุ่น เพื่อตอบรับกับทุกการใช้งาน พร้อมให้คุณเลือกได้ทั้งขนาด เนื้อผ้าและลายผ้าตามความชอบ รวมถึงองค์ประกอบภายใน ได้รูปทรงมาตรฐาน ประณีต เกรด A ไม่ยุบตัวง่าย มีเชือกสำหรับผูกกับเก้าอี้ นั่งได้สบาย ไม่ปวดเมื่อย มีซิปถอดผ้าซักได้
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class=" [ col-xs-12 col-sm-6 ] product__wrap text-center" ng-repeat="product in products | filter:query | orderBy:orderSort" ng-class="{'item-last': product.id == 5}">
       <a href="#/product/{{product.code}}" class="block-center">
         <img ng-src="{{product.images[0]}}" class="product__img --list">
       </a>
-      <a href="#/product/{{product.code}}" class="block-center">
-        <h2 class="theme__font --productname">{{product.name}}</h2>
-      </a>
+      <h2 class="block-center">
+        <a href="#/product/{{product.code}}/{{product.fabric}}" class="head --topic">{{product.name}}</a>
+      </h2>
     </div>
   </div>
-</div>
+  <div class="cushion__wrap">
+    <div class="col-xs-12 col-sm-5"><h3 class="head --h3 --line">Cushions</h3></div>
+    <div class="col-xs-12 col-sm-7">
+      <p class="content">
+        หมอนอิง และปลอกหมอนอิง cuddle ผลิตจากผ้าที่มีคุณภาพ หลากหลาย สวยน่ารัก วางบนโซฟา ทำให้ห้องดูสดใส มีชีวิตชีวา วางประดับตกแต่งบ้านได้เป็นอย่างดี ภายในใช้ไส้ใย POLYESTER คุณภาพ นิ่มน่ากอด ทั้งยังมีซิปถอดผ้าซักได้ ทำให้ไม่ต้องกังวลเรื่องการทำความสะอาด
+      </p>
+    </div>
+  </div>
+</section>

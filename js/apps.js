@@ -18,7 +18,7 @@ seatpadStore.config(['$routeProvider',
         templateUrl: 'partials/seatpad-list.html',
         controller: 'ProductListCtrl'
       }).
-      when('/product/:productId', {
+      when('/product/:productId/:fabric', {
         templateUrl: 'partials/seatpad-detail.html',
         controller: 'ProductDetailCtrl'
       }).
