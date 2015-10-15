@@ -1,7 +1,8 @@
 .head {
   color: $head-color;
   &.\--h2 {
-    font: 700 36px $head-font;
+    font: 700 42px $head-font;
+    line-height: 0.8;
   }
   &.\--h3 {
     font: 400 20px $content-font;

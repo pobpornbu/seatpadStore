@@ -58,7 +58,7 @@
           width: 100%;
           height: 1px;
           position: absolute;
-          top: 70px;
+          top: 53px;
           left: 4px;
           @include transform(rotate(-45deg));
         }
@@ -77,10 +77,10 @@
         .brand__title {
           display: block;
           font-family: $head-font;
-          font-size: 36px;
+          font-size: 52px;
           font-style: italic;
           color: $light-gold;
-          line-height: 1;
+          line-height: 0.4;
           &:hover {
             text-decoration: none;
           }
@@ -88,20 +88,106 @@
 
     .brand__product {
       display: block;
-      font: 300 16px $content-font;
+      font: 300 14px $content-font;
       letter-spacing: 1px;
       color: $lightest-gold;
       margin-top: 0;
     }
 
-  .nav__container {
-    display: block;
+  .nav__icon {
+    width: 25px;
+    height: 25px;
+    margin: 30px 15px 0;
     position: absolute;
-    top: 210px;
-    left: 15px;
+    top: 0;
+    right: 0;
+    @include transform(rotate(0deg));
+    @include transition(.5s ease-in-out);
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+      span {
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 50%;
+        background: $light-gold;
+        opacity: 1;
+        @include transform(rotate(0deg));
+        @include transition(.25s ease-in-out);
+
+        &:nth-child(even) {
+          left: 50%;
+        }
+
+        &:nth-child(odd) {
+          left:0px;
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+          top: 0px;
+        }
+        &:nth-child(3), &:nth-child(4) {
+          top: 8px;
+        }
+        &:nth-child(5), &:nth-child(6) {
+          top: 16px;
+        }
+      }
+
+      &.open {
+        span {
+          &:nth-child(1), &:nth-child(6) {
+            @include transform(rotate(45deg));
+          }
+          &:nth-child(2), &:nth-child(5) {
+            @include transform(rotate(-45deg));
+          }
+          &:nth-child(1) {
+            left: 2px;
+            top: 7px;
+          }
+          &:nth-child(2) {
+            left: calc(50% - 3px);
+            top: 7px;
+          }
+          &:nth-child(3) {
+            left: -50%;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            left: 100%;
+            opacity: 0;
+          }
+          &:nth-child(5), &:nth-child(6) {
+            opacity: 0;
+          }
+        }
+        &+.nav__container {
+          display: block;
+          top: 50px;
+          height: 140px;
+        }
+      }
+  }
+  .nav__container {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 40px;
+    padding: 15px;
+    background-color: $green;
     text-align: right;
+    @include transition(1s ease-out);
+
     @media screen and (min-width: 768px) {
       top: 200px;
+      left: -100px;
+      right: auto;
+      display: block;
     }
   }
     .nav__link {
@@ -119,17 +205,11 @@
       }
     }
 
-  .gallery-home__wrap {
-    width: 100%;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    overflow: hidden;
-    margin: 0;
-    z-index: 0;
-  }
+
   .home-gallery__wrap {
+    margin-top: 100px;
     @media screen and (min-width: 768px) {
+      margin-top: 0;
       position: relative;
       left: 13%;
     }
@@ -147,13 +227,13 @@
 
   .gallery__link {
     display: block;
-    @include opacity(0.5);
-    &:hover, &:active, &:focus {
-      @include opacity(1);
-    }
-    @media screen and (min-width: 768px) {
-      @include opacity(1);
-    }
+    // @include opacity(0.5);
+    // &:hover, &:active, &:focus {
+    //   @include opacity(1);
+    // }
+    // @media screen and (min-width: 768px) {
+    //   @include opacity(1);
+    // }
   }
     .gallery__img {
       max-width: 100%;
@@ -180,7 +260,7 @@
       width: 200px;
       height: 295px;
       position: relative;
-      top: -110px;
+      top: -60px;
       right: -100px;
       @media screen and (min-width: 768px) {
         width: 300px;
@@ -194,7 +274,7 @@
         background: none;
         width: auto;
         height: auto;
-        margin-top: -24matpx;
+        margin-top: -24px;
         &:before {
           display: block;
           font-size: 48px;
@@ -223,7 +303,7 @@
 
 
   .about-text__container {
-    top: -80px;
+    top: -40px;
     width: 300px;
     padding: 0 0 0 15px;
     position: relative;
@@ -307,10 +387,10 @@
         // Cushion
         .cushion__wrap {
           position: absolute;
-          bottom: 1330px;
+          bottom: 1180px;
 
           @media screen and (min-width: 768px) {
-            bottom: 700px;
+            bottom: 650px;
           }
         }
 

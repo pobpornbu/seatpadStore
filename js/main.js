@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $(".js-gallery-main").lightSlider({
-      item: 1
+      item: 1,
+      controls: false
+    });
+    $('.nav__icon').click(function(){
+      $(this).toggleClass('open');
     });
 });
 
