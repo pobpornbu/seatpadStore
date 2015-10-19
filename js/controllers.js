@@ -16,7 +16,7 @@ StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seat
 
     $scope.product = Seatpad.Productdb.get({productId: $routeParams.productId},
       function(product) {
-        console.log($scope.product);
+        // console.log($scope.product);
         $scope.mainImageUrl = product.images[0];
       }
     );
@@ -35,7 +35,7 @@ StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seat
 
     $scope.fabric = Seatpad.Fabricdb.get({fabric: $routeParams.fabric},
       function(fabric){
-        console.log("Item");
+        // console.log("Item");
         $scope.fabricImage = fabric.images[0];
     });
 
@@ -72,7 +72,6 @@ StoreController.directive('fabricgal', function(){
     restrict: 'A',
     link: function (scope, element, attrs) {
       scope.$watch(attrs.fabricgal, function(){
-        console.log('ready lightSlider');
         element.lightSlider({
           item: 5,
           pager: false,
@@ -141,6 +140,23 @@ StoreController.directive('fabric', function(){
       return popover;
     }
   }
+});
+
+StoreController.directive('scrollTo', function ($location, $anchorScroll) {
+  return function(scope, element, attrs) {
+    //console.log($anchorScroll);
+    element.bind('click', function(event) {
+        event.stopPropagation();
+        var off = scope.$on('$locationChangeStart', function(ev) {
+            off();
+            ev.preventDefault();
+        });
+        var location = attrs.scrollTo;
+        $location.hash(location);
+        $anchorScroll();
+    });
+
+  };
 });
 // StoreController.controller('ReviewController', ['$scope', 'Seatpad',
 //   function($scope, Seatpad){

@@ -455,6 +455,18 @@
     }
   }
 
+  .review__stars {
+    font-size: 30px;
+    color: $darker-gold;
+    display: inline-block;
+    margin-right: 10px;
+    i {
+      display: inline-block;
+      width: 20px;
+      line-height: 0.5;
+    }
+  }
+
 .fabric-gallery__wrap {
   margin: 15px 0;
   @include clearfix;

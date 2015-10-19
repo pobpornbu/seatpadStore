@@ -483,6 +483,16 @@ a, .link {
   .product-thumbs__img {
     width: 89px; }
 
+.review__stars {
+  font-size: 30px;
+  color: #9f893f;
+  display: inline-block;
+  margin-right: 10px; }
+  .review__stars i {
+    display: inline-block;
+    width: 20px;
+    line-height: 0.5; }
+
 .fabric-gallery__wrap {
   margin: 15px 0; }
   .fabric-gallery__wrap::after {

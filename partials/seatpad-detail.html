@@ -39,7 +39,8 @@
         <h3 class="head --topic">คำติชม</h3>
         <div ng-repeat="review in product.reviews">
           <blockquote class="blockquote">
-            <strong class="content">{{review.stars}} Stars</strong>
+            <!-- <span class="content">{{review.stars | starrate}} Stars</span> -->
+            <span class="review__stars" ng-bind-html="review.stars | starrate">Stars</span>
             <span class="content">{{review.body}}</span>
             <cite class="content clearfix">— {{review.author}}</cite>
           </blockquote>
@@ -47,7 +48,7 @@
         <form name="reviewForm" ng-submit="reviewForm.$valid && addReview(product)" novalidate>
           <!--  Live Preview -->
           <blockquote class="blockquote">
-              <strong class="content">{{review.stars}} Stars</strong>
+              <span class="content">{{review.stars}} Stars</span>
               <span class="content">{{review.body}}</span>
               <cite class="content clearfix">— {{review.author}}</cite>
           </blockquote>
