@@ -11,6 +11,21 @@ StoreController.controller('ProductListCtrl', ['$scope', 'Seatpad',
   }
 ]);
 
+StoreController.directive('homegal', function(){
+  var directive = {
+    restrict: 'A',
+    link: function (scope, element, attrs) {
+      scope.$watch(attrs.homegal, function(){
+        element.lightSlider({
+          item: 1,
+          controls: false
+        });
+      });
+    }
+  };
+  return directive;
+});
+
 StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seatpad',
   function($scope, $routeParams, Seatpad) {
 
@@ -38,7 +53,6 @@ StoreController.controller('ProductDetailCtrl', ['$scope', '$routeParams', 'Seat
         // console.log("Item");
         $scope.fabricImage = fabric.images[0];
     });
-
   }
 ]);
 
@@ -144,7 +158,7 @@ StoreController.directive('fabric', function(){
 
 StoreController.directive('scrollTo', function ($location, $anchorScroll) {
   return function(scope, element, attrs) {
-    //console.log($anchorScroll);
+    console.log($location.path());
     element.bind('click', function(event) {
         event.stopPropagation();
         var off = scope.$on('$locationChangeStart', function(ev) {
@@ -152,6 +166,7 @@ StoreController.directive('scrollTo', function ($location, $anchorScroll) {
             ev.preventDefault();
         });
         var location = attrs.scrollTo;
+        //console.log($location.hash(location));
         $location.hash(location);
         $anchorScroll();
     });

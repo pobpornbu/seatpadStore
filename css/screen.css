@@ -18,9 +18,10 @@
   color: #f0dc9b; }
   .head.\--h2 {
     font: 700 42px "Tenali Ramakrishna", "Arbutus Slab", Arial, sans-serif;
+    letter-spacing: 2px;
     line-height: 0.8; }
   .head.\--h3 {
-    font: 400 20px "Roboto", Arial, sans-serif;
+    font: 300 20px "Roboto", Arial, sans-serif;
     letter-spacing: 2px; }
   .head.\--topic {
     font: 400 16px "Roboto", Arial, sans-serif;
@@ -58,7 +59,8 @@
   color: #c3ae67; }
 
 .blockquote {
-  border-left: 3px solid #7a734c; }
+  border-left: 3px solid #7a734c;
+  padding: 0 20px 10px 20px; }
 
 a, .link {
   color: #718475;
@@ -407,6 +409,11 @@ a, .link {
 .filter__container {
   margin-top: 8px; }
 
+.order-alphabet .product__wrap {
+  height: 322px; }
+.order-alphabet .item-last {
+  float: left; }
+
 .product__img.\--list {
   width: 100%;
   max-width: 300px; }
@@ -418,6 +425,8 @@ a, .link {
   @media screen and (min-width: 768px) {
     .item-last {
       margin-bottom: 200px; } }
+  .no-text .item-last {
+    margin-bottom: 0; }
 
 .seatpad__content {
   height: 120px; }
@@ -434,6 +443,10 @@ a, .link {
   @media screen and (min-width: 768px) {
     .cushion__wrap {
       bottom: 650px; } }
+
+.\@detail {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .detail-gallery__wrap {
   width: 284px;
@@ -468,7 +481,7 @@ a, .link {
         height: auto; } }
   .gallery__image.\--detail {
     background-color: #242925;
-    border: 5px solid #bca455; }
+    border: 2px solid #bca455; }
 
 .product-thumbs {
   padding: 0; }
@@ -485,9 +498,11 @@ a, .link {
 
 .review__stars {
   font-size: 30px;
-  color: #9f893f;
+  color: #FFC500;
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 10px;
+  position: relative;
+  top: 7px; }
   .review__stars i {
     display: inline-block;
     width: 20px;
@@ -499,6 +514,14 @@ a, .link {
     clear: both;
     content: "";
     display: table; }
+
+.fabric-item {
+  padding: 3px;
+  border: 1px solid #5F5639; }
+
+.fabric__code {
+  display: block;
+  padding: 3px 5px; }
 
 @media screen and (min-width: 768px) {
   .contact-form__container {

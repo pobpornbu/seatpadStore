@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container @detail">
   <div class="product row @product">
     <div class="col-xs-12 center-block clearfix detail-content__container" ng-hide="product.soldOut">
       <product-title></product-title>
@@ -26,8 +26,9 @@
         <li class="product-property__list content">ลายผ้า: {{product.fabric}}
           <span class="link">เลือกลายผ้า</span>
           <ul class="js-gallery-fabric fabric-gallery__wrap change-gallery-arrow" fabricgal>
-            <li ng-repeat="fabric in fabric.images" ng-class="{active:fabricImage==fabric}">
-              <img ng-src="{{fabric}}" class="gallery__img --fabric">
+            <li ng-repeat="image in fabric.images" class="fabric-item" ng-class="{active:fabricImage==image}">
+              <img ng-src="{{image.path}}" class="gallery__img --fabric">
+              <span class="content fabric__code">#{{image.code}}</span>
             </li>
           </ul>
         </li>

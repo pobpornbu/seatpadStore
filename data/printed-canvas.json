@@ -11,18 +11,27 @@
   "canPurchase": true,
   "soldOut": false,
   "images":[
-    "images/fabric/CAN-01.jpg",
-    "images/fabric/CAN-02.jpg",
-    "images/fabric/CAN-03.jpg",
-    "images/fabric/CAN-04.jpg",
-    "images/fabric/CAN-05.jpg",
-    "images/fabric/CAN-06.jpg",
-    "images/fabric/CAN-07.jpg",
-    "images/fabric/CAN-08.jpg",
-    "images/fabric/CAN-09.jpg",
-    "images/fabric/CAN-10.jpg",
-    "images/fabric/CAN-11.jpg",
-    "images/fabric/CAN-12.jpg"
+    {
+      "path" : "images/fabric/CAN-01.jpg",
+      "code": "CAN-01"
+    },
+    {
+      "path" : "images/fabric/CAN-02.jpg",
+      "code": "CAN-02"
+    },
+    {
+      "path" : "images/fabric/CAN-03.jpg",
+      "code": "CAN-03"
+    },
+    { "path" : "images/fabric/CAN-04.jpg", "code": "CAN-04"},
+    { "path" : "images/fabric/CAN-05.jpg", "code": "CAN-05"},
+    { "path" : "images/fabric/CAN-06.jpg", "code": "CAN-06"},
+    { "path" : "images/fabric/CAN-07.jpg", "code": "CAN-07"},
+    { "path" : "images/fabric/CAN-08.jpg", "code": "CAN-08"},
+    { "path" : "images/fabric/CAN-09.jpg", "code": "CAN-09"},
+    { "path" : "images/fabric/CAN-10.jpg", "code": "CAN-10"},
+    { "path" : "images/fabric/CAN-11.jpg", "code": "CAN-11"},
+    { "path" : "images/fabric/CAN-12.jpg", "code": "CAN-12"}
   ],
   "cleaness": true
 }

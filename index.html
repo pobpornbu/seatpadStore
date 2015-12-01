@@ -5,124 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Seatpad Store</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
   <link rel="stylesheet" href="bower_components/lightslider/dist/css/lightslider.min.css">
-  <!-- <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
   <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Tenali+Ramakrishna|Playfair+Display|Roboto:400,300,700,300italic' rel='stylesheet'>
-  <!-- https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,700,300italic -->
   <!--[if lte IE9]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 
 </head>
 <body id="theme__golden">
-  <section class="container nav-gallery__container">
-    <figure class="row home-gallery__wrap change-gallery-arrow">
-      <ul class="js-gallery-main">
-          <li>
-            <a href="#/product" target="_self" class="gallery__link">
-              <img class="gallery__img" src="images/slide-img1.jpg" alt="เบาะรองนั่ง 17x17นิ้ว ผูกกับเก้าอี้ไม้" title="เบาะรองนั่ง 17x17นิ้ว ผูกกับเก้าอี้ไม้" />
-            </a>
-          </li>
-          <li>
-            <a href="#/product" target="_self" class="gallery__link">
-              <img class="gallery__img" src="images/slide-img2.jpg" alt="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" title="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" />
-            </a>
-          </li>
-          <li>
-            <a href="#/product" target="_self" class="gallery__link">
-              <img class="gallery__img" src="images/slide-img3.jpg" alt="หมอนอิง ขนาดต่างๆ" />
-            </a>
-          </li>
-      </ul>
-      <header class="brand-nav__wrap">
-          <hgroup class="brand-title__bg">
-            <h1 class="brand-title__wrap"><a class="brand__title" href="#/product">Cuddle</a></h1>
-            <h2 class="brand__product">Seatpad &amp; Cushion</h2>
-          </hgroup>
-      </header>
-      <div class="nav__icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="nav__container">
-        <a class="nav__link" href="" scroll-to="home">Home</a>
-        <a class="nav__link" href="" scroll-to="about">About</a>
-        <a class="nav__link" href="" scroll-to="product">Products</a>
-        <a class="nav__link" href="" scroll-to="contact">Contact</a>
-      </nav>
-    </figure>
-  </section>
   <div class="view-container">
     <div class="view-frame" ng-view autoscroll="true"></div>
   </div>
-  <section id="contact" class="container @contact">
-    <div class="row">
-      <div class="col-xs-12 col-sm-5 contact-text__container">
-        <h2 class="head --h2 --line">Contact</h2>
-        <address class="content">
-        ที่อยู่ : 87 เพชรเกษม 19 แยก 6 <br>
-        แขวง ปากคลองภาษีเจริญ เขต ภาษีเจริญ กทม 10160 <br>
-        โทรศัพท์ : 02-869-0174, 081-444-3301, 083-545-5445 <br>
-        แฟกซ์ : 02-457-0854 <br>
-        อีเมล : <a href="mailto:promthong@hotmail.com">promthong@hotmail.com</a>
-        </address>
-        <a target="_blank" href="javascript:printImg();"><i class="mdi-action-print contact__icon"></i>พิมพ์แผนที่</a>
-      </div>
-      <div class="col-xs-12 col-sm-7 contact-form__container">
-        <form action="" class="contact-form__wrap">
-          <fieldset class="form__group --contact clearfix">
-            <div class="col-xs-12 col-sm-6 input__wrap">
-              <input type="text" class="form-control contact__input --primary" name="name" placeholder="Name">
-            </div>
-            <div class="col-xs-12 col-sm-6 input__wrap">
-              <input type="text" class="form-control contact__input --primary" name="email" placeholder="Email">
-            </div>
-          </fieldset>
-          <fieldset class="form__group --contact clearfix">
-            <div class="col-xs-12 input__wrap">
-              <input type="text" class="form-control contact__input --primary" name="subject" placeholder="Subject">
-            </div>
-          </fieldset>
-          <fieldset class="form__group --contact clearfix">
-            <div class="col-xs-12 input__wrap">
-              <textarea class="form-control contact__textarea --primary" name="message" placeholder="Message"></textarea>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-    <footer class="row footer__container">
-      <div class="col-xs-12 text-center">
-        <p class="content">&copy; Copyright 2013 Cuddle.com. All Rights Reserved.</p>
-      </div>
-    </footer>
-  </section>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
-  <script src="http://code.angularjs.org/1.3.2/angular-sanitize.js"></script>
   <script src="js/apps.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
   <script src="js/animations.js"></script>
-
   <script src="js/main.js"></script>
 </body>
 </html>

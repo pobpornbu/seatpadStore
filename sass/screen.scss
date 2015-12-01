@@ -12,8 +12,8 @@
 @import "base/typography";
 @import "base/component";
 
-// Global
 
+// Global
 .image {
   max-width: 100%;
 }
@@ -357,6 +357,11 @@
         margin-top: 8px;
       }
 
+      .order-alphabet {
+        .product__wrap { height: 322px; }
+        .item-last { float: left; }
+      }
+
         .product__img {
           &.\--list {
             width: 100%;
@@ -372,6 +377,7 @@
           @media screen and (min-width: 768px) {
             margin-bottom: 200px;
           }
+          .no-text & { margin-bottom: 0; }
         }
 
         .seatpad__content {
@@ -395,6 +401,11 @@
         }
 
 // Product Detail
+
+.\@detail {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
   .detail-gallery__wrap {
     width: 284px;
@@ -434,7 +445,7 @@
     }
     &.\--detail {
       background-color: darken($green, 5%);
-      border: 5px solid $dark-gold;
+      border: 2px solid $dark-gold;
     }
   }
 
@@ -457,9 +468,11 @@
 
   .review__stars {
     font-size: 30px;
-    color: $darker-gold;
+    color: $star-yellow;
     display: inline-block;
     margin-right: 10px;
+    position: relative;
+    top: 7px;
     i {
       display: inline-block;
       width: 20px;
@@ -471,6 +484,15 @@
   margin: 15px 0;
   @include clearfix;
 }
+  .fabric-item {
+    padding: 3px;
+    border: 1px solid #5F5639;
+  }
+    .fabric__code {
+      display: block;
+      padding: 3px 5px;
+    }
+
 // Contact
 
 .contact-form__container {

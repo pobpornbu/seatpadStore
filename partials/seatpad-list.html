@@ -1,4 +1,45 @@
 <!--Body content-->
+  <section class="container nav-gallery__container">
+    <figure class="row home-gallery__wrap change-gallery-arrow">
+      <ul class="js-gallery-main" homegal>
+          <li>
+            <a href="#/product" target="_self" class="gallery__link">
+              <img class="gallery__img" src="images/slide-img1.jpg" alt="เบาะรองนั่ง 17x17นิ้ว ผูกกับเก้าอี้ไม้" title="เบาะรองนั่ง 17x17นิ้ว ผูกกับเก้าอี้ไม้" />
+            </a>
+          </li>
+          <li>
+            <a href="#/product" target="_self" class="gallery__link">
+              <img class="gallery__img" src="images/slide-img2.jpg" alt="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" title="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" />
+            </a>
+          </li>
+          <li>
+            <a href="#/product" target="_self" class="gallery__link">
+              <img class="gallery__img" src="images/slide-img3.jpg" alt="หมอนอิง ขนาดต่างๆ" />
+            </a>
+          </li>
+      </ul>
+      <header class="brand-nav__wrap">
+          <hgroup class="brand-title__bg">
+            <h1 class="brand-title__wrap"><a class="brand__title" href="#/product">Cuddle</a></h1>
+            <h2 class="brand__product">Seatpad &amp; Cushion</h2>
+          </hgroup>
+      </header>
+      <div class="nav__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav__container">
+        <a class="nav__link" href="#/product" scroll-to="home">Home</a>
+        <a class="nav__link" href="#/product" scroll-to="about">About</a>
+        <a class="nav__link" href="#/product" scroll-to="product">Products</a>
+        <a class="nav__link" href="#/product" scroll-to="contact">Contact</a>
+      </nav>
+    </figure>
+  </section>
 <section id="about" class="container">
   <div class="row @about">
     <div class="about-gallery__container">
@@ -6,12 +47,12 @@
         <ul class="js-gallery-about change-gallery-arrow" aboutgal>
             <li>
               <a href="#/product" target="_self">
-                <img class="gallery__img" src="/seatpadStore/images/about-cushion-1.jpg" alt="หมอนอิง" title="หมอนอิง" />
+                <img class="gallery__img" src="images/about-cushion-1.jpg" alt="หมอนอิง" title="หมอนอิง" />
               </a>
             </li>
             <li>
               <a href="#/product" target="_self">
-                <img class="gallery__img" src="/seatpadStore/images/about-cushion-2.jpg" alt="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" title="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" />
+                <img class="gallery__img" src="images/about-cushion-2.jpg" alt="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" title="เบาะรองนั่ง 65x65นิ้ว ปิดนิคในสวน" />
               </a>
             </li>
             <!-- <li>
@@ -35,22 +76,22 @@
   </div>
   <div class="row">
     <div class="col-xs-12 search-filter__container">
-      <form class="search__form pull-left" role="search">
-        <div class="form-group search__wrap">
-          <input type="text" class="form-control search__input --primary" placeholder="Search" ng-model="query">
+      <form name="searchForm" class="search__form" role="search">
+        <div class="form-group search__wrap pull-left">
+          <input type="text" name="searchInput" class="form-control search__input --primary" placeholder="Search" ng-model="query">
           <i class="mdi-action-search search__icon --primary"></i>
         </div>
+        <div class="form-control-wrapper navbar-gap filter__container pull-left">
+          <select name="searchOrder" class="form-control" ng-model="orderSort">
+            <option value="name">Alphabetical</option>
+            <option value="id">Newest</option>
+          </select>
+          <span class="material-input"></span>
+        </div>
       </form>
-      <div class="form-control-wrapper navbar-gap filter__container pull-left">
-        <select class="form-control" ng-model="orderSort">
-          <option value="name">Alphabetical</option>
-          <option value="id">Newest</option>
-        </select>
-        <span class="material-input"></span>
-      </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row" ng-hide="searchForm.$dirty" ng-show="searchForm.searchInput.$pristine">
     <div class="col-xs-12 col-sm-5"><h3 class="head --h3 --line">Seatpads</h3></div>
     <div class="col-xs-12 col-sm-7">
       <p class="content seatpad__content
@@ -59,17 +100,17 @@
       </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row" ng-class="{'no-text': searchForm.$dirty, 'order-alphabet': searchForm.searchOrder.$dirty }">
     <div class=" [ col-xs-12 col-sm-6 ] product__wrap text-center" ng-repeat="product in products | filter:query | orderBy:orderSort" ng-class="{'item-last': product.id == 5}">
-      <a href="#/product/{{product.code}}/{{product.fabric}}" class="block-center">
+      <a href="#/product/{{product.code}}/{{product.fabric}}" class="block-center" target="_blank">
         <img ng-src="{{product.images[0]}}" class="product__img --list">
       </a>
       <h2 class="block-center">
-        <a href="#/product/{{product.code}}/{{product.fabric}}" class="head --topic">{{product.name}}</a>
+        <a href="#/product/{{product.code}}/{{product.fabric}}" class="head --topic" target="_blank">{{product.name}}</a>
       </h2>
     </div>
   </div>
-  <div class="cushion__wrap">
+  <div class="cushion__wrap" ng-hide="searchForm.$dirty" ng-show="searchForm.searchInput.$pristine">
     <div class="col-xs-12 col-sm-5"><h3 class="head --h3 --line">Cushions</h3></div>
     <div class="col-xs-12 col-sm-7">
       <p class="content">
@@ -77,4 +118,46 @@
       </p>
     </div>
   </div>
+</section>
+<section id="contact" class="container @contact">
+  <div class="row">
+    <div class="col-xs-12 col-sm-5 contact-text__container">
+      <h2 class="head --h2 --line">Contact</h2>
+      <address class="content">
+      ที่อยู่ : 87 เพชรเกษม 19 แยก 6 <br>
+      แขวง ปากคลองภาษีเจริญ เขต ภาษีเจริญ กทม 10160 <br>
+      โทรศัพท์ : 02-869-0174, 081-444-3301, 083-545-5445 <br>
+      แฟกซ์ : 02-457-0854 <br>
+      อีเมล : <a href="mailto:promthong@hotmail.com">promthong@hotmail.com</a>
+      </address>
+      <a target="_blank" href="javascript:printImg();"><i class="mdi-action-print contact__icon"></i>พิมพ์แผนที่</a>
+    </div>
+    <div class="col-xs-12 col-sm-7 contact-form__container">
+      <form action="" class="contact-form__wrap">
+        <fieldset class="form__group --contact clearfix">
+          <div class="col-xs-12 col-sm-6 input__wrap">
+            <input type="text" class="form-control contact__input --primary" name="name" placeholder="Name">
+          </div>
+          <div class="col-xs-12 col-sm-6 input__wrap">
+            <input type="text" class="form-control contact__input --primary" name="email" placeholder="Email">
+          </div>
+        </fieldset>
+        <fieldset class="form__group --contact clearfix">
+          <div class="col-xs-12 input__wrap">
+            <input type="text" class="form-control contact__input --primary" name="subject" placeholder="Subject">
+          </div>
+        </fieldset>
+        <fieldset class="form__group --contact clearfix">
+          <div class="col-xs-12 input__wrap">
+            <textarea class="form-control contact__textarea --primary" name="message" placeholder="Message"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <footer class="row footer__container">
+    <div class="col-xs-12 text-center">
+      <p class="content">&copy; Copyright 2013 Cuddle.com. All Rights Reserved.</p>
+    </div>
+  </footer>
 </section>

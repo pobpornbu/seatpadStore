@@ -2,10 +2,11 @@
   color: $head-color;
   &.\--h2 {
     font: 700 42px $head-font;
+    letter-spacing: 2px;
     line-height: 0.8;
   }
   &.\--h3 {
-    font: 400 20px $content-font;
+    font: 300 20px $content-font;
     letter-spacing: 2px;
   }
   &.\--topic {
@@ -27,6 +28,7 @@
 
 .blockquote {
   border-left: 3px solid $input-color;
+  padding: 0 20px 10px 20px;
 }
 
 a, .link {

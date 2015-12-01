@@ -11,19 +11,19 @@
   "canPurchase": true,
   "soldOut": false,
   "images":[
-    "images/fabric/M-G812-01.JPG",
-    "images/fabric/M-G812-03.JPG",
-    "images/fabric/M-G812-04.JPG",
-    "images/fabric/M-G813-05.JPG",
-    "images/fabric/M-G814-05.JPG",
-    "images/fabric/M-G811-04.JPG",
-    "images/fabric/M-G810-06.JPG",
-    "images/fabric/M-G810-09.JPG",
-    "images/fabric/M-G810-10.JPG",
-    "images/fabric/M-G810-11.JPG",
-    "images/fabric/M-G810-13.JPG",
-    "images/fabric/M-G810-15.JPG",
-    "images/fabric/M-G810-16.JPG"
+    { "path" : "images/fabric/M-G812-01.JPG", "code": "M-G812-01"},
+    { "path" : "images/fabric/M-G812-03.JPG", "code": "M-G812-03"},
+    { "path" : "images/fabric/M-G812-04.JPG", "code": "M-G812-04"},
+    { "path" : "images/fabric/M-G813-05.JPG", "code": "M-G813-05"},
+    { "path" : "images/fabric/M-G814-05.JPG", "code": "M-G814-05"},
+    { "path" : "images/fabric/M-G811-04.JPG", "code": "M-G811-04"},
+    { "path" : "images/fabric/M-G810-06.JPG", "code": "M-G810-06"},
+    { "path" : "images/fabric/M-G810-09.JPG", "code": "M-G810-09"},
+    { "path" : "images/fabric/M-G810-10.JPG", "code": "M-G810-10"},
+    { "path" : "images/fabric/M-G810-11.JPG", "code": "M-G810-11"},
+    { "path" : "images/fabric/M-G810-13.JPG", "code": "M-G810-13"},
+    { "path" : "images/fabric/M-G810-15.JPG", "code": "M-G810-15"},
+    { "path" : "images/fabric/M-G810-16.JPG", "code": "M-G810-16"}
   ],
   "cleaness": true
 }

@@ -11,12 +11,30 @@
   "canPurchase": true,
   "soldOut": false,
   "images":[
-    "images/fabric/ST-01.jpg",
-    "images/fabric/ST-02.jpg",
-    "images/fabric/ST-03.jpg",
-    "images/fabric/ST-04.jpg",
-    "images/fabric/ST-05.jpg",
-    "images/fabric/ST-06.jpg"
+    {
+      "path" : "images/fabric/ST-01.jpg",
+      "code" : "ST-01"
+    },
+    {
+      "path" : "images/fabric/ST-02.jpg",
+      "code" : "ST-02"
+    },
+    {
+      "path" : "images/fabric/ST-03.jpg",
+      "code": "ST-03"
+    },
+    {
+      "path" : "images/fabric/ST-04.jpg",
+      "code" : "ST-04"
+    },
+    {
+      "path" : "images/fabric/ST-05.jpg",
+      "code" : "ST-05"
+    },
+    {
+      "path" : "images/fabric/ST-06.jpg",
+      "code" : "ST-06"
+    }
   ],
   "cleaness": true
 }
